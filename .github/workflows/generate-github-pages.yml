@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  NUXT_ROUTER_BASE_URL: '/erasmus-festival/'
+  NUXT_APP_BASE_URL: '/erasmus-festival/'
 #  FULL_BASE_URL: 'https://yxz.cz/'
 
 jobs:
