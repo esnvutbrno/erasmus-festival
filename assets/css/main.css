@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'CoconutDays';
+    src: url('../fonts/coconut-days.ttf') format('truetype'),
+    url('../fonts/coconut-days.woff2') format('woff2');
+}
+
+.font-festival {
+    font-family: 'CoconutDays', fantasy;
+}
+
+body {
+    @apply bg-blue-800;
+}

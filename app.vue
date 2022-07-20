@@ -1,9 +1,19 @@
 <template>
-  <div class="max-w-2xl mx-auto">
+  <div class="flex flex-col justify-center items-center w-full h-screen">
     <h1
-      class="text-3xl text-violet-600 font-bold py-8"
+      class="
+        text-4xl lg:text-8xl
+        text-white font-bold font-festival tracking-wider
+        py-8 text-center inline-block
+        flex flex-col w-[11.5ch]
+      "
     >
-      Erasmus Festival Brno 2022
+      <span class="self-start">Erasmus</span>
+      <span class="self-end">Festival</span>
     </h1>
+
+    <Head>
+      <Title>Erasmus Festival</Title>
+    </Head>
   </div>
 </template>
