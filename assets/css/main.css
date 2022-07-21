@@ -14,3 +14,9 @@
 
 body {
 }
+
+.Bg__brick {
+    @apply absolute top-0 left-0 right-0 opacity-30;
+    background-image: url("~/assets/img/brick-wall.jpg");
+    height: 81%;
+}
