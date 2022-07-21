@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="159.98mm"
+   height="38.897549mm"
+   viewBox="0 0 159.98 38.897549"
+   version="1.1"
+   id="svg38174"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="festival-banner.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview38176"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.5554293"
+     inkscape:cx="310.20375"
+     inkscape:cy="82.935303"
+     inkscape:window-width="2560"
+     inkscape:window-height="1573"
+     inkscape:window-x="0"
+     inkscape:window-y="-10"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g37209" />
+  <defs
+     id="defs38171">
+    <rect
+       x="646.24011"
+       y="219.70514"
+       width="420.76038"
+       height="51.844727"
+       id="rect22238" />
+  </defs>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-36.63012,-163.53491)">
+    <g
+       id="g37209"
+       transform="matrix(2.2350455,0,0,2.2350455,-381.62427,-166.29665)">
+      <path
+         style="display:inline;fill:#211e1e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.255379"
+         d="m 255.18984,164.97611 h -64.7211 v -13.64014 h 64.7211 v 13.64014"
+         id="path872" />
+      <path
+         style="display:inline;fill:#98989a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.268501"
+         d="m 192.84094,162.97784 v -9.64361 h 59.9767 v 9.64361 h -59.9767"
+         id="path874" />
+      <path
+         style="display:inline;fill:#bdf8f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.157839"
+         d="m 254.38627,152.4988 c 0,0.13071 -0.10543,0.23676 -0.23614,0.23676 -0.13071,0 -0.23614,-0.10605 -0.23614,-0.23676 0,-0.13072 0.10543,-0.23615 0.23614,-0.23615 0.13071,0 0.23614,0.10543 0.23614,0.23615"
+         id="path1314" />
+      <path
+         style="display:inline;fill:#3f3f3f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.1578;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 254.33884,152.19923 -0.20324,-0.20102 4.37375,-4.42557 0.20323,0.20102 -4.37374,4.42557"
+         id="path1320"
+         inkscape:transform-center-x="-17.955844"
+         inkscape:transform-center-y="-18.694128" />
+      <text
+         xml:space="preserve"
+         transform="matrix(0.13572596,0,0,0.13572596,109.64908,124.77577)"
+         id="text22236"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:2.61658px;white-space:pre;shape-inside:url(#rect22238);fill:#faae38;fill-opacity:1;stroke:#000000;stroke-width:1.95982;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><tspan
+           x="646.24023"
+           y="261.06871"
+           id="tspan40804"><tspan
+             style="font-family:'Coconut Days';-inkscape-font-specification:'Coconut Days'"
+             id="tspan40802">17th Sep, Brno</tspan></tspan></text>
+      <path
+         style="display:inline;fill:#bdf8f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.157839"
+         d="m 191.46093,152.19657 c 0,0.13071 0.10543,0.23676 0.23614,0.23676 0.13071,0 0.23614,-0.10605 0.23614,-0.23676 0,-0.13072 -0.10543,-0.23615 -0.23614,-0.23615 -0.13071,0 -0.23614,0.10543 -0.23614,0.23615"
+         id="path1314-3" />
+      <path
+         style="display:inline;fill:#3f3f3f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.1578;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 191.50836,152.19923 0.20324,-0.20102 -4.37375,-4.42557 -0.20323,0.20102 4.37374,4.42557"
+         id="path1320-6"
+         inkscape:transform-center-x="17.955844"
+         inkscape:transform-center-y="-18.694128" />
+    </g>
+  </g>
+</svg>

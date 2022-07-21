@@ -13,29 +13,61 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="View will-change-scroll" ref="View">
-    <div class="View__bgs" :style="{width: `${TOTAL_WIDTH}vw`}">
-      <!-- backgrounds -->
-      <div class="Bg__brick"></div>
-      <div class="Bg__grass-line h-12 -mt-12 z-10"></div>
-      <div class="Bg__grass z-0"></div>
-    </div>
+  <div class="will-change-scroll">
+    <div class="View">
+      <div class="View__bgs" :style="{width: `${TOTAL_WIDTH}vw`}">
+        <!-- backgrounds -->
+        <div class="Bg__brick"></div>
+        <div class="Bg__grass-line h-12 -mt-12 z-10"></div>
+        <div class="Bg__grass z-0"></div>
+      </div>
 
-    <div class="View__screen bg-red-600" v-bind="FOOD.elAttrs">
-      FOOD
-    </div>
-    <div class="View__screen" v-bind="STAGE.elAttrs">
-      <StageScreen></StageScreen>
-    </div>
-    <div class="View__screen bg-violet-600 gap-x-16" v-bind="CHILL.elAttrs">
-      <button @click="STAGE.scrollTo()">&lt;</button>
+      <div class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
+        <!--      wall part -->
+        <div class="h-[45%] flex flex-col justify-center items-center">
+          <h2 class="font-festival drop-shadow flex flex-col">
+            <span>FEELING</span>
+            <span class="ml-32">HUNGRY?</span>
+          </h2>
+        </div>
+      </div>
+      <div class="View__screen" v-bind="STAGE.elAttrs">
+        <StageScreen></StageScreen>
+      </div>
+      <div class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
+        <!-- wall part -->
+        <div class="h-[55%] flex flex-col justify-center items-center relative">
 
-      CHILL
+          <h2
+            class="font-festival drop-shadow inline-block flex flex-col cursor-pointer"
+            @click="CHILL.scrollTo()"
+          >
+            <span>CHILL</span>
+            <span class="ml-32">ZONE</span>
+          </h2>
 
-      <button @click="CLUBS.scrollTo()">&gt;</button>
-    </div>
-    <div class="View__screen bg-pink-400" v-bind="CLUBS.elAttrs">
-      CLUBS
+          <button
+            class="absolute w-56 right-8 bottom-8 hover:right-6 transition-all cursor-pointer"
+            @click="CLUBS.scrollTo()"
+          >
+            <img
+              class="w-full"
+              src="~/assets/svg/students-sign.svg?url"
+              alt="Students clubs in Brno"
+            >
+          </button>
+        </div>
+        <!--      <button @click="STAGE.scrollTo()">&lt;</button>-->
+        <!--      <button @click="CLUBS.scrollTo()">&gt;</button>-->
+      </div>
+      <div class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
+        <div class="h-[55%] flex flex-col justify-center items-center relative">
+          <h2 class="font-festival drop-shadow inline-block flex flex-col">
+            <span>Students</span>
+            <span class="ml-32">in Brno</span>
+          </h2>
+        </div>
+      </div>
     </div>
   </div>
 </template>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {FOOD, STAGE, CHILL} from '~/store/screen';
 import StageSvg from '~/assets/svg/stage.svg?component'
+import FestivalBannerSvg from '~/assets/svg/festival-banner.svg?component'
 
 
 </script>
@@ -17,6 +18,9 @@ import StageSvg from '~/assets/svg/stage.svg?component'
         @click="STAGE.scrollTo()"
       />
       <div class="Bg__grass-line absolute w-2/3 mx-auto bottom-0 left-0 right-0 h-12"></div>
+      <FestivalBannerSvg
+        class="mx-auto -mt-44 h-44 relative"
+      />
       <!--      <svg class="Stage__img w-3/4 mx-auto relative cursor-pointer" viewBox="0 0 121 77">-->
       <!--        <use :xlink:href="import('@/assets/svg/stage.svg') + '#stage'"/>-->
       <!--      </svg>-->
@@ -75,6 +79,22 @@ import StageSvg from '~/assets/svg/stage.svg?component'
     transform: translate(-8%, -4%);
   }
 }
+@keyframes PandaHead {
+  0%, 10% {
+    transform: rotate(5deg);
+  }
+  90%, 100% {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes CrocoHead {
+  0%, 10% {
+    transform: rotate(5deg);
+  }
+  90%, 100% {
+    transform: rotate(-5deg);
+  }
+}
 
 @keyframes PeaBody {
   0%, 30% {
@@ -118,6 +138,12 @@ import StageSvg from '~/assets/svg/stage.svg?component'
   }
 }
 
+#panda-head {
+  animation: ease-in-out PandaHead 750ms infinite alternate;
+  transform-origin: bottom center;
+  transform-box: fill-box;
+}
+
 #panda-hand-left {
   animation: ease-in-out PandaHandLeft 200ms infinite alternate;
 }
@@ -128,13 +154,13 @@ import StageSvg from '~/assets/svg/stage.svg?component'
 
 #pea-body {
   transform-box: fill-box;
-  animation: ease-in-out PeaBody 1200ms infinite alternate;
+  animation: ease-in-out PeaBody 1500ms infinite alternate;
   transform-origin: bottom center;
 }
 
 #pea-lips {
   transform-box: fill-box;
-  animation: ease-in-out PeaLips 400ms infinite alternate;
+  animation: ease-in-out PeaLips calc(1500ms / 4) infinite alternate;
   transform-origin: right;
 }
 
@@ -147,6 +173,12 @@ import StageSvg from '~/assets/svg/stage.svg?component'
   transform-box: fill-box;
   animation: ease-in-out CrocoHandRight 400ms infinite alternate;
   transform-origin: top right;
+}
+
+#croco-head {
+  animation: ease-in-out CrocoHead 750ms infinite alternate-reverse;
+  transform-origin: bottom left;
+  transform-box: fill-box;
 }
 
 

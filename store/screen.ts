@@ -23,14 +23,14 @@ export class Screen {
     }
 
     scrollTo() {
-        this.ref.scrollIntoView({behavior: "smooth"})
+        this.ref.scrollIntoView({behavior: "smooth", block: "center"})
     }
 }
 
-export const FOOD = new Screen('food', 50)
+export const FOOD = new Screen('food', 60)
 export const STAGE = new Screen('stage', 100)
-export const CHILL = new Screen('chill', 50)
-export const CLUBS = new Screen('clubs', 40)
+export const CHILL = new Screen('chill', 60)
+export const CLUBS = new Screen('clubs', 60)
 
 export const SCREENS: Record<string, Screen> = {FOOD, STAGE, CHILL, CLUBS}
 

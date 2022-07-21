@@ -10,6 +10,7 @@
 
 @layer components {
     .font-festival {
+        @apply tracking-wider;
         font-family: 'CoconutDays', fantasy;
     }
 
@@ -22,7 +23,7 @@
     .Bg__grass {
         @apply bg-lime-500 bg-repeat-round;
         background-image: url("~/assets/img/grass.png");
-        background-size: 40%;
+
         height: 45%;
     }
 
@@ -32,3 +33,15 @@
     }
 }
 
+@keyframes BodyFadeIn {
+    0%, 80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body {
+    animation: ease-in-out BodyFadeIn 800ms;
+    animation-iteration-count: 1;
+}

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="197.47588mm"
+   height="70.855888mm"
+   viewBox="0 0 197.47588 70.855889"
+   version="1.1"
+   id="svg11606"
+   sodipodi:docname="students-sign.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview40980"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.93690425"
+     inkscape:cx="227.87814"
+     inkscape:cy="45.895832"
+     inkscape:window-width="2560"
+     inkscape:window-height="1573"
+     inkscape:window-x="0"
+     inkscape:window-y="-10"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs11603">
+    <linearGradient
+       xlink:href="#linearGradient13638"
+       id="linearGradient9695"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-11.684163,-0.19096588,-0.04088573,54.573479,217.05574,248.46084)"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       spreadMethod="pad" />
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-33.120462,-0.54132061,-0.11589655,154.69648,-166.48914,998.07151)"
+       spreadMethod="pad"
+       id="linearGradient13638">
+      <stop
+         style="stop-opacity:1;stop-color:#0d0d1c"
+         offset="0"
+         id="stop13618" />
+      <stop
+         style="stop-opacity:1;stop-color:#121221"
+         offset="0.0757576"
+         id="stop13620" />
+      <stop
+         style="stop-opacity:1;stop-color:#ffffff"
+         offset="0.111111"
+         id="stop13622" />
+      <stop
+         style="stop-opacity:1;stop-color:#ffffff"
+         offset="0.166667"
+         id="stop13624" />
+      <stop
+         style="stop-opacity:1;stop-color:#4b4b59"
+         offset="0.222222"
+         id="stop13626" />
+      <stop
+         style="stop-opacity:1;stop-color:#9a9aa9"
+         offset="0.590909"
+         id="stop13628" />
+      <stop
+         style="stop-opacity:1;stop-color:#ffffff"
+         offset="0.666667"
+         id="stop13630" />
+      <stop
+         style="stop-opacity:1;stop-color:#ffffff"
+         offset="0.813131"
+         id="stop13632" />
+      <stop
+         style="stop-opacity:1;stop-color:#a0a0af"
+         offset="0.878788"
+         id="stop13634" />
+      <stop
+         style="stop-opacity:1;stop-color:#0d0d1c"
+         offset="1"
+         id="stop13636" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13680-2">
+      <path
+         d="m 1707.31,71.1094 -22.5,8.7422 4.79,12.3398 0.35,-0.1328 22.15,-8.6094 -4.79,-12.3398"
+         id="path13678-7" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13692-0">
+      <path
+         d="m 1712.1,83.4492 -22.15,8.6094 22.15,-8.5977 v -0.0117"
+         id="path13690-9" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13704-3">
+      <path
+         d="m 1767.86,215.57 -30.26,11.75 5.65,14.559 30.26,-11.75 -5.65,-14.559"
+         id="path13702-6" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath13758-0">
+      <path
+         d="m 1655.06,368.93 c 1.92,4.953 7.49,7.41 12.44,5.484 l 235.69,-91.516 c 2.47,-0.96 5.79,-3.433 7.41,-5.55 l 43.1,-56.055 c 4.85,-6.309 2.43,-12.555 -5.41,-13.938 l -69.64,-12.289 c -2.61,-0.457 -6.74,-0.054 -9.21,0.911 l -235.69,91.507 c -4.95,1.926 -7.41,7.493 -5.49,12.442 z"
+         id="path13756-6" />
+    </clipPath>
+    <rect
+       x="-1043.1545"
+       y="2611.0254"
+       width="1287.0983"
+       height="880.00903"
+       id="rect2229-2" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-139.64235,-218.44711)">
+    <path
+       d="m 148.6483,289.30298 c -4.9066,0.009 -8.90281,-3.97949 -8.91463,-8.88953 l -0.0913,-52.73612 c -0.0103,-4.90476 3.98031,-8.90846 8.88608,-8.91941 l 133.40686,-0.3108 c 2.27734,-0.004 5.46879,0.88294 7.41994,2.06108 l 43.12464,26.03784 c 2.99032,1.80279 4.63162,4.32318 4.63828,7.0838 0.0118,2.75614 -1.63638,5.27258 -4.61407,7.08859 l -43.03855,26.19477 c -1.94164,1.17837 -5.12459,2.07637 -7.41571,2.08483 l -133.4015,0.30495"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.712477"
+       id="path13738-5"
+       sodipodi:nodetypes="cccccccccccc" />
+    <g
+       id="g13754-9"
+       clip-path="url(#clipPath13758-0)"
+       transform="matrix(0.66372335,-0.25902175,-0.25902175,-0.66372335,-861.24212,901.23517)"
+       style="fill:#faae38;fill-opacity:1">
+      <path
+         d="m 1655.06,368.93 c 1.92,4.953 7.49,7.41 12.44,5.484 l 173.5619,-67.27016 c 2.47,-0.96 5.79,-3.433 7.41,-5.55 l 43.1,-56.055 c 4.85,-6.309 2.43,-12.555 -5.41,-13.938 l -69.64,-12.289 c -2.61,-0.457 -6.74,-0.054 -9.21,0.911 L 1633.75,287.484 c -4.95,1.926 -7.41,7.493 -5.49,12.442 l 26.8,69.004"
+         style="fill:#faae38;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path13768-2"
+         sodipodi:nodetypes="ccccccccccc" />
+    </g>
+    <path
+       d="m 279.42126,223.69744 -128.21123,0.30372 c -3.41598,0.007 -6.18767,2.7819 -6.17628,6.20151 l 0.079,47.66793 c 0.0103,3.41694 2.78033,6.18369 6.19838,6.18204 l 128.2102,-0.30639 c 1.71614,-0.0118 4.28128,-0.7293 5.73862,-1.62005 l 38.89349,-23.66621 c 4.38763,-2.67141 4.38237,-6.97671 -0.0103,-9.63017 L 285.1677,225.29184 c -1.46859,-0.88228 -4.04152,-1.59596 -5.74621,-1.59375 z m 0.006,3.4248 c 1.08495,-0.003 3.04703,0.53706 3.9703,1.09991 l 38.96768,23.53856 c 1.21953,0.73399 1.64643,1.4752 1.64564,1.88474 -0.003,0.40613 -0.42277,1.15076 -1.63352,1.88943 l -38.89935,23.67084 c -0.91237,0.56255 -2.87393,1.12157 -3.96406,1.11104 l -128.21119,0.30377 c -1.52029,0.004 -2.76655,-1.22932 -2.76792,-2.76142 l -0.0849,-47.66336 c 6.5e-4,-1.52688 1.23711,-2.76809 2.76399,-2.77505 l 128.21226,-0.30112"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.712477"
+       id="path13770-2"
+       sodipodi:nodetypes="cccccccccccccccccccccccc" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.55490326,0,0,0.55490326,732.21918,-1218.4473)"
+       id="text2227-8"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.95;font-family:sans-serif;letter-spacing:1.97038px;white-space:pre;shape-inside:url(#rect2229-2);fill:#fefdfd;fill-opacity:1;stroke:#000000;stroke-width:2.23413;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.986133"><tspan
+         x="-1043.1543"
+         y="2646.389"
+         id="tspan55248"><tspan
+           style="font-family:'Coconut Days';-inkscape-font-specification:'Coconut Days'"
+           id="tspan55246">STUDENTS
+</tspan></tspan><tspan
+         x="-1043.1543"
+         y="2690.3619"
+         id="tspan55252"><tspan
+           style="font-family:'Coconut Days';-inkscape-font-specification:'Coconut Days'"
+           id="tspan55250">IN BRNO</tspan></tspan></text>
+  </g>
+</svg>
