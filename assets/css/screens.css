@@ -4,12 +4,13 @@
 
 .View__screen {
     @apply h-full flex-shrink-0;
-
-    @apply text-white text-8xl;
 }
 
 .View__screen h2 {
-    @apply font-festival drop-shadow inline-block flex flex-col justify-center items-center;
+    @apply
+        font-festival drop-shadow inline-block flex flex-col justify-center items-center
+        text-white text-5xl lg:text-8xl
+    ;
 }
 
 .View__bgs {

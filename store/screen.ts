@@ -27,7 +27,7 @@ export class Screen {
     }
 }
 
-export const FOOD = new Screen('food', 60)
+export const FOOD = new Screen('food', 80)
 export const STAGE = new Screen('stage', 100)
 export const CHILL = new Screen('chill', 60)
 export const CLUBS = new Screen('clubs', 60)
