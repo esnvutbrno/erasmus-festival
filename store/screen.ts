@@ -1,3 +1,6 @@
+import _ from 'lodash'
+
+
 export class Screen {
     public ref: HTMLElement = null
 
@@ -30,3 +33,5 @@ export const CHILL = new Screen('chill', 50)
 export const CLUBS = new Screen('clubs', 40)
 
 export const SCREENS: Record<string, Screen> = {FOOD, STAGE, CHILL, CLUBS}
+
+export const TOTAL_WIDTH = _.sumBy(Object.values(SCREENS), 'width');

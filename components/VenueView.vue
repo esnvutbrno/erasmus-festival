@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {onMounted} from 'vue'
-import {STAGE, CLUBS, CHILL, FOOD} from '~/store/screen'
+import {STAGE, CLUBS, CHILL, FOOD, TOTAL_WIDTH} from '~/store/screen'
 
 
 onMounted(() => {
@@ -13,7 +13,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="View" ref="View">
+  <div class="View will-change-scroll" ref="View">
+    <div class="View__bgs" :style="{width: `${TOTAL_WIDTH}vw`}">
+      <!-- backgrounds -->
+      <div class="Bg__brick"></div>
+      <div class="Bg__grass-line h-12 -mt-12 z-10"></div>
+      <div class="Bg__grass z-0"></div>
+    </div>
+
     <div class="View__screen bg-red-600" v-bind="FOOD.elAttrs">
       FOOD
     </div>
@@ -35,12 +42,16 @@ onMounted(() => {
 
 <style scoped>
 .View {
-  @apply mx-auto w-full h-screen overflow-hidden flex flex-row;
+  @apply mx-auto w-full h-screen overflow-hidden flex flex-row relative;
 }
 
 .View__screen {
   @apply h-full flex-shrink-0;
 
   @apply text-white text-8xl;
+}
+
+.View__bgs {
+  @apply absolute top-0 left-0 right-0 h-full z-0;
 }
 </style>
