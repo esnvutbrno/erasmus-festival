@@ -11,7 +11,7 @@
 @layer components {
     .font-festival {
         @apply tracking-wider;
-        font-family: 'CoconutDays', fantasy;
+        font-family: 'Coconut Days', fantasy;
     }
 
     .Bg__brick {
