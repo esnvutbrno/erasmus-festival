@@ -1,4 +1,5 @@
 @import url(./stage.css);
+@import url(./screens.css);
 
 @tailwind base;
 @tailwind components;

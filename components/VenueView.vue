@@ -23,16 +23,10 @@ onMounted(() => {
       </div>
 
       <div class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
-        <!--      wall part -->
-        <div class="h-[45%] flex flex-col justify-center items-center">
-          <h2>
-            <span>FEELING</span>
-            <span class="ml-32">HUNGRY?</span>
-          </h2>
-        </div>
+        <FoodScreen />
       </div>
       <div class="View__screen" v-bind="STAGE.elAttrs">
-        <StageScreen></StageScreen>
+        <StageScreen />
       </div>
       <div class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
         <!-- wall part -->
@@ -71,23 +65,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-
-<style scoped>
-.View {
-  @apply mx-auto w-full h-screen overflow-hidden flex flex-row relative;
-}
-
-.View__screen {
-  @apply h-full flex-shrink-0;
-
-  @apply text-white text-8xl;
-}
-
-.View__screen h2 {
-  @apply font-festival drop-shadow inline-block flex flex-col justify-center items-center;
-}
-
-.View__bgs {
-  @apply absolute top-0 left-0 right-0 h-full z-0;
-}
-</style>
