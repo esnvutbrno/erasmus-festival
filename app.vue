@@ -6,7 +6,7 @@
 
 
 
-    <div class="bg-lime-600 h-screen text-white text-8xl flex flex-row justify-center items-center">
+    <div class="bg-lime-600 h-screen text-white text-4xl xl:text-8xl flex flex-row justify-center items-center">
       FLAG PARADE
     </div>
     <div class="bg-blue-800 mx-auto max-w-6xl py-8">

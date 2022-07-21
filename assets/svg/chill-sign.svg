@@ -26,7 +26,7 @@
      showgrid="false"
      inkscape:zoom="0.93690425"
      inkscape:cx="314.33308"
-     inkscape:cy="466.42974"
+     inkscape:cy="467.49708"
      inkscape:window-width="2560"
      inkscape:window-height="1573"
      inkscape:window-x="0"
@@ -178,59 +178,62 @@
   <g
      id="layer1"
      transform="translate(-139.45361,-217.95848)">
-    <path
-       d="m 216.91339,457.87967 -11.69714,6.61547 0.16526,-223.56625 h 0.18118 -0.18118 l -0.0219,29.92395 11.68321,0.20391 0.0219,-29.92388 v 0"
-       style="fill:url(#linearGradient9695);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.04603"
-       id="path13640-6" />
     <g
-       id="g13676-1"
-       clip-path="url(#clipPath13680-2)"
-       transform="matrix(0.44897162,-0.18079608,-0.18079608,-0.44897162,-536.66419,620.16708)">
+       id="chill-sign-stick">
+      <path
+         d="m 216.91339,457.87967 -11.69714,6.61547 0.16526,-223.56625 h 0.18118 -0.18118 l -0.0219,29.92395 11.68321,0.20391 0.0219,-29.92388 v 0"
+         style="fill:url(#linearGradient9695);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.04603"
+         id="path13640-6" />
       <g
-         id="g13682-8"
-         transform="matrix(39.2,0,0,39.2,1679.9,62.9)">
-        <image
-           width="1"
-           height="1"
-           style="image-rendering:optimizeSpeed"
-           preserveAspectRatio="none"
-           transform="matrix(1,0,0,-1,0,1)"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAM1JREFUGJVNzrFqwlAYQOHz588l0cGEUMQipTh0ChWSF+hjpJvT9RXdSkefQDKFji7aZLAq5d7bQYee+RuOGJMG7o3HIxaLZ47Hgev1gveeiH9lWQ6Acw7nPPP5I3EUGULwgKcoMs7nyx04druWSDVFNWG5rKmqCpEY7x3T6QMhQKyaEILDWkuej9jvvxFRyvKFrvu6PZTlK+v1isPhl9nsicmkYLP5RDW5gaZpADidflA1bLcfiBhUU2IAa99p245hGOj7nrp+Q0QRUf4AP6lIkNlI/k8AAAAASUVORK5CYII="
-           id="image13684-7" />
+         id="g13676-1"
+         clip-path="url(#clipPath13680-2)"
+         transform="matrix(0.44897162,-0.18079608,-0.18079608,-0.44897162,-536.66419,620.16708)">
+        <g
+           id="g13682-8"
+           transform="matrix(39.2,0,0,39.2,1679.9,62.9)">
+          <image
+             width="1"
+             height="1"
+             style="image-rendering:optimizeSpeed"
+             preserveAspectRatio="none"
+             transform="matrix(1,0,0,-1,0,1)"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAM1JREFUGJVNzrFqwlAYQOHz588l0cGEUMQipTh0ChWSF+hjpJvT9RXdSkefQDKFji7aZLAq5d7bQYee+RuOGJMG7o3HIxaLZ47Hgev1gveeiH9lWQ6Acw7nPPP5I3EUGULwgKcoMs7nyx04druWSDVFNWG5rKmqCpEY7x3T6QMhQKyaEILDWkuej9jvvxFRyvKFrvu6PZTlK+v1isPhl9nsicmkYLP5RDW5gaZpADidflA1bLcfiBhUU2IAa99p245hGOj7nrp+Q0QRUf4AP6lIkNlI/k8AAAAASUVORK5CYII="
+             id="image13684-7" />
+        </g>
       </g>
-    </g>
-    <g
-       id="g13688-9"
-       clip-path="url(#clipPath13692-0)"
-       transform="matrix(0.44897162,-0.18079608,-0.18079608,-0.44897162,-536.66419,620.16708)">
       <g
-         id="g13694-2"
-         transform="matrix(35.1999,0,0,25.2,1683.9,76.9)">
-        <image
-           width="1"
-           height="1"
-           style="image-rendering:optimizeSpeed"
-           preserveAspectRatio="none"
-           transform="matrix(1,0,0,-1,0,1)"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAYAAACJmvbYAAAABHNCSVQICAgIfAhkiAAAAH1JREFUCJk9w7EKgzAUQNGbkCCEpiqU4uLW1c2hv+LQrxYHF3VxacBVMOGlWw8cVdePbK2laZ5orTjPixgjKUU0gHMOrRUiGRH5187d8N4DEGNCRMhZKMs7pu/fdN2Lfd+ZppkQvogI1hrMMHxo24pxnCmKim1bOI7Aui78ALp1N98dxTogAAAAAElFTkSuQmCC"
-           id="image13696-0" />
+         id="g13688-9"
+         clip-path="url(#clipPath13692-0)"
+         transform="matrix(0.44897162,-0.18079608,-0.18079608,-0.44897162,-536.66419,620.16708)">
+        <g
+           id="g13694-2"
+           transform="matrix(35.1999,0,0,25.2,1683.9,76.9)">
+          <image
+             width="1"
+             height="1"
+             style="image-rendering:optimizeSpeed"
+             preserveAspectRatio="none"
+             transform="matrix(1,0,0,-1,0,1)"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAFCAYAAACJmvbYAAAABHNCSVQICAgIfAhkiAAAAH1JREFUCJk9w7EKgzAUQNGbkCCEpiqU4uLW1c2hv+LQrxYHF3VxacBVMOGlWw8cVdePbK2laZ5orTjPixgjKUU0gHMOrRUiGRH5187d8N4DEGNCRMhZKMs7pu/fdN2Lfd+ZppkQvogI1hrMMHxo24pxnCmKim1bOI7Aui78ALp1N98dxTogAAAAAElFTkSuQmCC"
+             id="image13696-0" />
+        </g>
       </g>
-    </g>
-    <g
-       id="g13700-2"
-       clip-path="url(#clipPath13704-3)"
-       transform="matrix(0.44897162,-0.18079608,-0.18079608,-0.44897162,-535.52274,690.45992)">
       <g
-         id="g13706-3"
-         transform="matrix(49.2,0,0,44.2,1731.9,206.9)">
-        <image
-           width="1"
-           height="1"
-           style="image-rendering:optimizeSpeed"
-           preserveAspectRatio="none"
-           transform="matrix(1,0,0,-1,0,1)"
-           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAABHNCSVQICAgIfAhkiAAAARdJREFUGJVFjrtqwlAAQI9JbmJAYn3UNl0UTAVxKl2iay2FBvwywaVD/y46FLSttZiH5CY36dDXmQ+HU+t2Lyt+EEIwGPQRQieOT2SZRMoM1+2hNRpNLKuOpmk4joMQOmVZoVRJWSqUUsRxgtFstpAyI88l4/GEojix3b79SZ1OizDcYDhOizzP6PXO8f1bjsdPTDNkt9uy379j23WA/+J8/sBodEUYvpAkFZqmY9s2m80aIUwM07RotzssFo8IoYgicN0TUuYEwR2r1TO6bmIATKdT+v0LikLhuh9EUUwcJwyH1zjOGVLKb3E2mwGwXr+SJAlQIwjuWS6f+F0zPM/D81wADoeINE1J0xTfv6GqKizLxrJsvgBV1XtBcPzLDgAAAABJRU5ErkJggg=="
-           id="image13708-7" />
+         id="g13700-2"
+         clip-path="url(#clipPath13704-3)"
+         transform="matrix(0.44897162,-0.18079608,-0.18079608,-0.44897162,-535.52274,690.45992)">
+        <g
+           id="g13706-3"
+           transform="matrix(49.2,0,0,44.2,1731.9,206.9)">
+          <image
+             width="1"
+             height="1"
+             style="image-rendering:optimizeSpeed"
+             preserveAspectRatio="none"
+             transform="matrix(1,0,0,-1,0,1)"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAABHNCSVQICAgIfAhkiAAAARdJREFUGJVFjrtqwlAAQI9JbmJAYn3UNl0UTAVxKl2iay2FBvwywaVD/y46FLSttZiH5CY36dDXmQ+HU+t2Lyt+EEIwGPQRQieOT2SZRMoM1+2hNRpNLKuOpmk4joMQOmVZoVRJWSqUUsRxgtFstpAyI88l4/GEojix3b79SZ1OizDcYDhOizzP6PXO8f1bjsdPTDNkt9uy379j23WA/+J8/sBodEUYvpAkFZqmY9s2m80aIUwM07RotzssFo8IoYgicN0TUuYEwR2r1TO6bmIATKdT+v0LikLhuh9EUUwcJwyH1zjOGVLKb3E2mwGwXr+SJAlQIwjuWS6f+F0zPM/D81wADoeINE1J0xTfv6GqKizLxrJsvgBV1XtBcPzLDgAAAABJRU5ErkJggg=="
+             id="image13708-7" />
+        </g>
       </g>
     </g>
     <path
@@ -396,8 +399,8 @@
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:1.97038px;white-space:pre;shape-inside:url(#rect2229-2-2);fill:#fefdfd;fill-opacity:1;stroke:#000000;stroke-width:2.23413;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.986133"><tspan
          x="-1043.1543"
          y="2652.389"
-         id="tspan1977"><tspan
+         id="tspan1265"><tspan
            style="font-family:'Coconut Days';-inkscape-font-specification:'Coconut Days'"
-           id="tspan1975">CHILL</tspan></tspan></text>
+           id="tspan1263">CHILL</tspan></tspan></text>
   </g>
 </svg>

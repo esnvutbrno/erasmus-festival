@@ -1,0 +1,124 @@
+
+@keyframes PandaHandLeft {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10%);
+    }
+    75% {
+        transform: translateY(5%);
+    }
+}
+
+@keyframes PandaHandRight {
+    0%, 30% {
+        transform: translate(0, 0);
+    }
+    70%, 100% {
+        transform: translate(-8%, -4%);
+    }
+}
+
+@keyframes PandaHead {
+    0%, 10% {
+        transform: rotate(5deg);
+    }
+    90%, 100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes CrocoHead {
+    0%, 10% {
+        transform: rotate(5deg);
+    }
+    90%, 100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes PeaBody {
+    0%, 30% {
+        transform: rotate(0deg);
+    }
+    70%, 100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes PeaLips {
+    0%, 30% {
+        transform: scale(1);
+    }
+    70%, 100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes CrocoHandLeft {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10%);
+    }
+    75% {
+        transform: translateY(10%);
+    }
+}
+
+@keyframes CrocoHandRight {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    75% {
+        /*transform: translateY(5%);*/
+    }
+}
+
+#panda-head {
+    animation: ease-in-out PandaHead 750ms infinite alternate;
+    transform-origin: bottom center;
+    transform-box: fill-box;
+}
+
+#panda-hand-left {
+    animation: ease-in-out PandaHandLeft 200ms infinite alternate;
+}
+
+#panda-hand-right {
+    animation: ease-in-out PandaHandRight 1500ms infinite alternate;
+}
+
+#pea-body {
+    transform-box: fill-box;
+    animation: ease-in-out PeaBody 1500ms infinite alternate;
+    transform-origin: bottom center;
+}
+
+#pea-lips {
+    transform-box: fill-box;
+    animation: ease-in-out PeaLips calc(1500ms / 4) infinite alternate;
+    transform-origin: right;
+}
+
+#croco-hand-left {
+    transform-box: fill-box;
+    animation: ease-in-out CrocoHandLeft 400ms infinite alternate;
+}
+
+#croco-hand-right {
+    transform-box: fill-box;
+    animation: ease-in-out CrocoHandRight 400ms infinite alternate;
+    transform-origin: top right;
+}
+
+#croco-head {
+    animation: ease-in-out CrocoHead 750ms infinite alternate-reverse;
+    transform-origin: bottom left;
+    transform-box: fill-box;
+}

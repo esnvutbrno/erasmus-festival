@@ -1,3 +1,5 @@
+@import url(./stage.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,16 +17,14 @@
     }
 
     .Bg__brick {
-        @apply opacity-30;
+        @apply opacity-30 h-1/3 lg:h-[55%];
         background-image: url("~/assets/img/brick-wall.jpg");
-        height: 55%;
     }
 
     .Bg__grass {
-        @apply bg-lime-500 bg-repeat-round;
+        @apply bg-lime-500 bg-repeat-round h-2/3 lg:h-[45%];
         background-image: url("~/assets/img/grass.png");
 
-        height: 45%;
     }
 
     .Bg__grass-line {

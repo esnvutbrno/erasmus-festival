@@ -25,7 +25,7 @@ onMounted(() => {
       <div class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
         <!--      wall part -->
         <div class="h-[45%] flex flex-col justify-center items-center">
-          <h2 class="font-festival drop-shadow flex flex-col">
+          <h2>
             <span>FEELING</span>
             <span class="ml-32">HUNGRY?</span>
           </h2>
@@ -39,7 +39,7 @@ onMounted(() => {
         <div class="h-[55%] flex flex-col justify-center items-center relative">
 
           <h2
-            class="font-festival drop-shadow inline-block flex flex-col cursor-pointer"
+            class="cursor-pointer"
             @click="CHILL.scrollTo()"
           >
             <span>CHILL</span>
@@ -62,7 +62,7 @@ onMounted(() => {
       </div>
       <div class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
         <div class="h-[55%] flex flex-col justify-center items-center relative">
-          <h2 class="font-festival drop-shadow inline-block flex flex-col">
+          <h2>
             <span>Students</span>
             <span class="ml-32">in Brno</span>
           </h2>
@@ -81,6 +81,10 @@ onMounted(() => {
   @apply h-full flex-shrink-0;
 
   @apply text-white text-8xl;
+}
+
+.View__screen h2 {
+  @apply font-festival drop-shadow inline-block flex flex-col justify-center items-center;
 }
 
 .View__bgs {
