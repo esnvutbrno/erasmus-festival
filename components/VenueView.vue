@@ -30,6 +30,7 @@ class Screen {
 const FOOD = new Screen('food', 50)
 const STAGE = new Screen('stage', 100)
 const CHILL = new Screen('chill', 50)
+const CLUBS = new Screen('clubs', 40)
 
 // const SCREENS: Screen[] = [FOOD, STAGE, CHILL]
 
@@ -54,8 +55,15 @@ onMounted(() => {
 
       <button @click="CHILL.scrollTo()">&gt;</button>
     </div>
-    <div class="View__screen bg-violet-600" v-bind="CHILL.elAttrs">
-      CHILL
+    <div class="View__screen bg-violet-600 gap-x-16" v-bind="CHILL.elAttrs">
+      <button @click="STAGE.scrollTo()">&lt;</button>
+
+      FOOD
+
+      <button @click="CLUBS.scrollTo()">&gt;</button>
+    </div>
+    <div class="View__screen bg-pink-400" v-bind="CLUBS.elAttrs">
+      CLUBS
     </div>
   </div>
 </template>
