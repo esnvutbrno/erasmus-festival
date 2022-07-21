@@ -5,21 +5,28 @@ import {FOOD, STAGE, CHILL} from '~/store/screen';
 
 <template>
   <div class="
-    relative
-    flex flex-col w-full items-center
+    relative w-full h-full
+    flex flex-col
+    items-center
   ">
-    <div class="w-full relative pt-8">
+    <div class="absolute top-0 left-0 right-0 h-full z-0">
       <!-- out of flex -->
       <div class="Bg__brick"></div>
-
+      <div class="Bg__grass-line h-12 -mt-12 z-10"></div>
+      <div class="Bg__grass z-0"></div>
+    </div>
+    <div class="w-full relative pt-8">
       <img
         src="~/assets/svg/stage.svg"
         alt="Our stage ready for your"
         class="Stage__img w-3/4 mx-auto relative cursor-pointer"
         @click="STAGE.scrollTo()"
       >
+<!--      <svg class="Stage__img w-3/4 mx-auto relative cursor-pointer" viewBox="0 0 121 77">-->
+<!--        <use :xlink:href="import('@/assets/svg/stage.svg') + '#stage'"/>-->
+<!--      </svg>-->
     </div>
-    <div class="w-full flex flex-row justify-between -mt-[15%] px-32">
+    <div class="w-full flex flex-row justify-between -mt-[18%] px-32">
       <img
         src="~/assets/svg/food-sign.svg"
         alt="Go to food section"

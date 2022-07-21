@@ -16,7 +16,21 @@ body {
 }
 
 .Bg__brick {
-    @apply absolute top-0 left-0 right-0 opacity-30;
+    @apply opacity-30;
     background-image: url("~/assets/img/brick-wall.jpg");
-    height: 81%;
+    height: 50%;
+}
+
+.Bg__grass {
+    @apply opacity-90;
+    @apply bg-lime-500 bg-repeat-round;
+    background-image: url("~/assets/img/grass.png");
+    background-size: 40%;
+    height: 50%;
+}
+
+.Bg__grass-line {
+    @apply opacity-90;
+    @apply bg-repeat-x;
+    background-image: url("~/assets/svg/grass.svg");
 }
