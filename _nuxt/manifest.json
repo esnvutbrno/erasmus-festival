@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-c94c2cb0.mjs",
+    "file": "entry-a919a66a.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -8,15 +8,19 @@
       "layouts/default.vue"
     ],
     "css": [
-      "entry.ba94a68d.css"
+      "entry.499ad23a.css"
     ],
     "assets": [
+      "stage.39fc7415.svg",
+      "food-sign.722ed437.svg",
+      "chill-sign.e80060c6.svg",
       "coconut-days.7380425d.ttf",
-      "coconut-days.ffbb2600.woff2"
+      "coconut-days.ffbb2600.woff2",
+      "brick-wall.5654757d.jpg"
     ]
   },
   "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs": {
-    "file": "error-component-9a0cd162.mjs",
+    "file": "error-component-80d8ad69.mjs",
     "src": "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -28,7 +32,7 @@
     ]
   },
   "layouts/default.vue": {
-    "file": "default-e76d7f47.mjs",
+    "file": "default-813cbdbe.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -36,7 +40,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
-    "file": "error-404-20629476.mjs",
+    "file": "error-404-0d569595.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -47,7 +51,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
-    "file": "error-500-904def41.mjs",
+    "file": "error-500-e81e006c.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
