@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'CoconutDays';
+    font-family: 'Coconut Days';
     src: url('../fonts/coconut-days.ttf') format('truetype'),
     url('../fonts/coconut-days.woff2') format('woff2');
 }
