@@ -11,7 +11,7 @@ onMounted(() => {
   if (name) {
     const screen: Screen = view.screenByName(name)
     if (!screen)
-      return abortNavigation('Unknown page')
+      return view.goTo(STAGE)
 
     return view.goTo(screen)
   } else {
