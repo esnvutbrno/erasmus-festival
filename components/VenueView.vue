@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import {onMounted} from 'vue'
-import {STAGE, CLUBS, CHILL, FOOD, TOTAL_WIDTH} from '~/store/screen'
-import WallHeading from "~/components/WallHeading.vue";
+import {CHILL, CLUBS, FOOD, STAGE, TOTAL_WIDTH} from '~/store/screen'
+import Wall from "~/components/Wall.vue";
+import SimpleArrow from "~/components/SimpleArrow.vue";
 
 
 onMounted(() => {
@@ -31,34 +32,47 @@ onMounted(() => {
       </div>
       <div class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
         <!-- wall part -->
-        <WallHeading @headingClick="CHILL.scrollTo()">
+        <Wall @headingClick="CHILL.scrollTo()">
           <span>CHILL</span>
           <span class="ml-32">ZONE</span>
 
           <template #append>
-            <button
-              class="absolute w-56 right-8 bottom-8 hover:right-7 transition-all cursor-pointer"
-              @click="CLUBS.scrollTo()"
-            >
-              <img
-                class="w-full"
-                src="~/assets/svg/students-sign.svg?url"
-                alt="Students clubs in Brno"
-              >
-            </button>
+            <WallNavigation>
+              <template #left>
+                <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>
+              </template>
+              <template #right>
+                <button
+                  class="w-56 transition-transform hover:translate-x-1 drop-shadow-xl"
+                  @click="CLUBS.scrollTo()"
+                >
+                  <img
+                    class="w-full"
+                    src="~/assets/svg/students-sign.svg?url"
+                    alt="Students clubs in Brno"
+                  >
+                </button>
+              </template>
+            </WallNavigation>
           </template>
-        </WallHeading>
+        </Wall>
 
         <!--      <button @click="STAGE.scrollTo()">&lt;</button>-->
         <!--      <button @click="CLUBS.scrollTo()">&gt;</button>-->
       </div>
       <div class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
-        <div class="h-[55%] flex flex-col justify-center items-center relative">
-          <h2>
-            <span>Students</span>
-            <span class="ml-32">in Brno</span>
-          </h2>
-        </div>
+        <Wall @headingClick="CLUBS.scrollTo()">
+          <span>Students</span>
+          <span class="ml-32">in Brno</span>
+
+          <template #append>
+            <WallNavigation>
+              <template #left>
+                <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>
+              </template>
+            </WallNavigation>
+          </template>
+        </Wall>
       </div>
     </div>
   </div>

@@ -6,13 +6,6 @@
     @apply h-full flex-shrink-0;
 }
 
-.View__screen h2 {
-    @apply
-        font-festival drop-shadow inline-block flex flex-col justify-center items-center
-        text-white text-2xl md:text-5xl lg:text-8xl
-    ;
-}
-
 .View__bgs {
     @apply absolute top-0 left-0 right-0 h-full z-0;
 }

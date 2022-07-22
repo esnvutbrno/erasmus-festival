@@ -2,7 +2,8 @@
 import HeyCactusSvg from '../assets/svg/cactus.svg?component'
 import HungryBullSvg from '../assets/svg/bull.svg?component'
 import FoodLine from "./FoodLine";
-import WallHeading from "./WallHeading";</script>
+import WallHeading from "./Wall";
+import WallNavigation from "./WallNavigation";</script>
 
 <template>
   <div class="h-full relative">
@@ -13,7 +14,6 @@ import WallHeading from "./WallHeading";</script>
     </WallHeading>
 
     <div class="h-2/3 flex flex-col">
-
       <FoodLine color="text-yellow-200">
         <template #icon>
           <HeyCactusSvg
