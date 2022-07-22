@@ -14,14 +14,14 @@ import ChillSignSvg from '~/assets/svg/chill-sign.svg?component'
     flex flex-col justify-center
     items-center
   ">
-    <!-- wall part -->
-    <div class="relative h-[55%]">
-      <WallNavigation>
-        <template #left>
-          <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>
-        </template>
-      </WallNavigation>
-    </div>
+<!--    &lt;!&ndash; wall part &ndash;&gt;-->
+<!--    <div class="relative h-[55%]">-->
+<!--      <WallNavigation>-->
+<!--        <template #left>-->
+<!--          <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>-->
+<!--        </template>-->
+<!--      </WallNavigation>-->
+<!--    </div>-->
 
     <div class="relative mt-8 w-5/6 lg:w-4/5 xl:w-3/4 max-h-[65vh] mb-56 basis-4/5">
       <!-- stage itself -->
