@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {onMounted} from 'vue'
 import {STAGE, CLUBS, CHILL, FOOD, TOTAL_WIDTH} from '~/store/screen'
+import WallHeading from "~/components/WallHeading.vue";
 
 
 onMounted(() => {
@@ -23,34 +24,31 @@ onMounted(() => {
       </div>
 
       <div class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
-        <FoodScreen />
+        <FoodScreen/>
       </div>
       <div class="View__screen" v-bind="STAGE.elAttrs">
-        <StageScreen />
+        <StageScreen/>
       </div>
       <div class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
         <!-- wall part -->
-        <div class="h-[55%] flex flex-col justify-center items-center relative">
+        <WallHeading @headingClick="CHILL.scrollTo()">
+          <span>CHILL</span>
+          <span class="ml-32">ZONE</span>
 
-          <h2
-            class="cursor-pointer"
-            @click="CHILL.scrollTo()"
-          >
-            <span>CHILL</span>
-            <span class="ml-32">ZONE</span>
-          </h2>
-
-          <button
-            class="absolute w-56 right-8 bottom-8 hover:right-6 transition-all cursor-pointer"
-            @click="CLUBS.scrollTo()"
-          >
-            <img
-              class="w-full"
-              src="~/assets/svg/students-sign.svg?url"
-              alt="Students clubs in Brno"
+          <template #append>
+            <button
+              class="absolute w-56 right-8 bottom-8 hover:right-7 transition-all cursor-pointer"
+              @click="CLUBS.scrollTo()"
             >
-          </button>
-        </div>
+              <img
+                class="w-full"
+                src="~/assets/svg/students-sign.svg?url"
+                alt="Students clubs in Brno"
+              >
+            </button>
+          </template>
+        </WallHeading>
+
         <!--      <button @click="STAGE.scrollTo()">&lt;</button>-->
         <!--      <button @click="CLUBS.scrollTo()">&gt;</button>-->
       </div>

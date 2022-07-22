@@ -42,6 +42,7 @@
         opacity: 1;
     }
 }
+
 body {
     animation: ease-in-out BodyFadeIn 800ms;
     animation-iteration-count: 1;

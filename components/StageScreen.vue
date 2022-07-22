@@ -24,7 +24,8 @@ import ChillSignSvg from '~/assets/svg/chill-sign.svg?component'
 
     <div class="
       absolute left-0 right-0 top-1/2
-      flex flex-row justify-evenly items-start
+      flex flex-col sm:flex-row
+      justify-evenly items-start
 
       lg:justify-between lg:px-24
       xl:top-1/3

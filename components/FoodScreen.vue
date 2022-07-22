@@ -1,17 +1,17 @@
 <script setup>
 import HeyCactusSvg from '../assets/svg/cactus.svg?component'
 import HungryBullSvg from '../assets/svg/bull.svg?component'
-import FoodLine from "./FoodLine";</script>
+import FoodLine from "./FoodLine";
+import WallHeading from "./WallHeading";</script>
 
 <template>
   <div class="h-full relative">
     <!--      wall part -->
-    <div class="h-1/3 flex flex-col justify-center items-center">
-      <h2>
-        <span>FEELING</span>
-        <span class="ml-16 lg:ml-32">HUNGRY?</span>
-      </h2>
-    </div>
+    <WallHeading klass="h-1/3">
+      <span>FEELING</span>
+      <span class="ml-16 lg:ml-32">HUNGRY?</span>
+    </WallHeading>
+
     <div class="h-2/3 flex flex-col">
 
       <FoodLine color="text-yellow-200">
