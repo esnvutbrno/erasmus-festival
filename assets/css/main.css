@@ -43,6 +43,10 @@
     }
 }
 
+html {
+    @apply snap-y snap-proximity scroll-smooth;
+}
+
 body {
     animation: ease-in-out BodyFadeIn 800ms;
     animation-iteration-count: 1;

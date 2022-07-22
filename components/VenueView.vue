@@ -25,12 +25,11 @@ onMounted(() => {
         <div class="Bg__grass z-0"></div>
       </div>
 
-
-      <div class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
+      <section class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
         <FoodScreen/>
-      </div>
+      </section>
 
-      <div class="View__screen bg-gray-600" v-bind="BANDS.elAttrs">
+      <section class="View__screen bg-gray-600" v-bind="BANDS.elAttrs">
         <Wall>
           <span>BANDS</span>
 
@@ -53,15 +52,17 @@ onMounted(() => {
             </WallNavigation>
           </template>
         </Wall>
-      </div>
+      </section>
 
-      <div class="View__screen" v-bind="STAGE.elAttrs">
+      <section class="View__screen" v-bind="STAGE.elAttrs">
         <StageScreen/>
-      </div>
-      <div class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
+      </section>
+
+      <section class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
         <ChillScreen />
-      </div>
-      <div class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
+      </section>
+
+      <section class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
         <Wall @headingClick="CLUBS.scrollTo()">
           <span>Students</span>
           <span class="ml-32">in Brno</span>
@@ -74,7 +75,7 @@ onMounted(() => {
             </WallNavigation>
           </template>
         </Wall>
-      </div>
+      </section>
     </div>
   </div>
 </template>

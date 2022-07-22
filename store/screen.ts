@@ -35,6 +35,7 @@ export const CHILL = new Screen('chill', 100)
 export const CLUBS = new Screen('clubs', 100)
 
 export const FLAG_PARADE = new Screen('flag-parade', 100)
+export const FESTIVAL_INFO = new Screen('festival-info', 100)
 
 export const TOP_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS}
 
