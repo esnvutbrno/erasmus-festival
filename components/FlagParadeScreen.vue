@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {FLAG_PARADE, FESTIVAL_INFO} from "~/store/screen";
+import {useView} from "~/composables/useView";
 
+const view = useView()
 </script>
 
 <template>
@@ -21,7 +23,7 @@ import {FLAG_PARADE, FESTIVAL_INFO} from "~/store/screen";
     <WallNavigation>
       <template #right>
         <SimpleArrow
-          @click="FESTIVAL_INFO.scrollTo()"
+          @click="view.goTo(FESTIVAL_INFO)"
           dir="down"
           class="text-white font-festival text-4xl"
         >

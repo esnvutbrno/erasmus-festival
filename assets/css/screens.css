@@ -1,9 +1,13 @@
 .View {
-    @apply mx-auto w-full h-screen overflow-hidden flex flex-row relative;
+    @apply
+        mx-auto w-full h-screen
+        scroll-smooth snap-x snap-mandatory
+        overflow-hidden flex flex-row relative
+    ;
 }
 
 .View__screen {
-    @apply h-full flex-shrink-0;
+    @apply h-full flex-shrink-0 snap-start;
 }
 
 .View__bgs {

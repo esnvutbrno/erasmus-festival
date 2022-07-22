@@ -4,15 +4,9 @@ import {CHILL, CLUBS, FOOD, STAGE, BANDS, TOTAL_WIDTH} from '~/store/screen'
 import Wall from "~/components/Wall.vue";
 import SimpleArrow from "~/components/SimpleArrow.vue";
 import ArrowSign from "~/components/ArrowSign.vue";
+import {useView} from "~/composables/useView";
 
-
-onMounted(() => {
-  document.getElementById(STAGE.id).scrollIntoView({
-    behavior: 'auto',
-    block: 'center',
-    inline: 'center'
-  });
-})
+const view = useView()
 </script>
 
 <template>
@@ -42,12 +36,12 @@ onMounted(() => {
                   dir="left"
                   text="FOOD"
                   class="w-40"
-                  @click="FOOD.scrollTo()"
+                  @click="view.goTo(FOOD)"
                 ></ArrowSign>
               </template>
 
               <template #right>
-                <SimpleArrow dir="right" @click="STAGE.scrollTo()"/>
+                <SimpleArrow dir="right" @click="view.goTo(STAGE)"/>
               </template>
             </WallNavigation>
           </template>
@@ -59,18 +53,18 @@ onMounted(() => {
       </section>
 
       <section class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
-        <ChillScreen />
+        <ChillScreen/>
       </section>
 
       <section class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
-        <Wall @headingClick="CLUBS.scrollTo()">
+        <Wall @headingClick="CLUBS.goTo()">
           <span>Students</span>
           <span class="ml-32">in Brno</span>
 
           <template #append>
             <WallNavigation>
               <template #left>
-                <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>
+                <SimpleArrow dir="left" @click="view.goTo(STAGE)"/>
               </template>
             </WallNavigation>
           </template>

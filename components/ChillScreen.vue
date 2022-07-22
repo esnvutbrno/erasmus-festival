@@ -1,23 +1,24 @@
 <script setup lang="ts">
 import {CHILL, STAGE, CLUBS} from "~/store/screen";
+import {useView} from "~/composables/useView";
 
-
+const view = useView()
 </script>
 <template>
   <!-- wall part -->
-  <Wall @headingClick="CHILL.scrollTo()">
+  <Wall @headingClick="view.goTo(CHILL)">
     <span>CHILL</span>
     <span class="ml-32">ZONE</span>
 
     <template #append>
       <WallNavigation>
         <template #left>
-          <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>
+          <SimpleArrow dir="left" @click="view.goTo(STAGE)"/>
         </template>
         <template #right>
           <button
             class="w-56 transition-transform hover:translate-x-1 drop-shadow-xl"
-            @click="CLUBS.scrollTo()"
+            @click="view.goTo(CLUBS)"
           >
             <img
               class="w-full"

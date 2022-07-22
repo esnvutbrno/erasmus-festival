@@ -7,6 +7,9 @@ import FoodSignSvg from '~/assets/svg/food-sign.svg?component'
 import ChillSignSvg from '~/assets/svg/chill-sign.svg?component'
 import SimpleArrow from "~/components/SimpleArrow.vue";
 import WallNavigation from "~/components/WallNavigation.vue";
+import {useView} from "~/composables/useView";
+
+const view = useView()
 
 </script>
 
@@ -22,7 +25,7 @@ import WallNavigation from "~/components/WallNavigation.vue";
               dir="left"
               text="BANDS"
               class="w-40"
-              @click="BANDS.scrollTo()"
+              @click="view.goTo(BANDS)"
             ></ArrowSign>
 
             <ArrowSign
@@ -31,7 +34,7 @@ import WallNavigation from "~/components/WallNavigation.vue";
               dir="left"
               text="FOOD"
               class="w-40"
-              @click="FOOD.scrollTo()"
+              @click="view.goTo(FOOD)"
             ></ArrowSign>
           </template>
           <template #right>
@@ -41,7 +44,7 @@ import WallNavigation from "~/components/WallNavigation.vue";
               dir="right"
               text="CHILL"
               class="w-40"
-              @click="CHILL.scrollTo()"
+              @click="view.goTo(CHILL)"
             ></ArrowSign>
           </template>
         </WallNavigation>
@@ -56,7 +59,7 @@ import WallNavigation from "~/components/WallNavigation.vue";
           absolute inset-x-0 mx-auto bottom-3/4
           cursor-pointer max-h-[65vh]
         "
-        @click="STAGE.scrollTo()"
+        @click="view.goTo(STAGE)"
       />
 
       <FansSvg
@@ -67,7 +70,7 @@ import WallNavigation from "~/components/WallNavigation.vue";
       <WallNavigation>
         <template #right>
           <SimpleArrow
-            @click="FLAG_PARADE.scrollTo()"
+            @click="view.goTo(FLAG_PARADE)"
             dir="down"
             class="text-white font-festival text-4xl"
           >

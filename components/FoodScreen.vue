@@ -5,7 +5,9 @@ import FoodLine from "./FoodLine";
 import WallHeading from "./Wall";
 import WallNavigation from "./WallNavigation";
 import {STAGE} from '../store/screen'
+import {useView} from "../composables/useView";
 
+const view = useView()
 </script>
 
 <template>
@@ -16,7 +18,7 @@ import {STAGE} from '../store/screen'
       <template #append>
         <WallNavigation>
           <template #right>
-            <SimpleArrow dir="right" @click="STAGE.scrollTo()"/>
+            <SimpleArrow dir="right" @click="view.goTo(STAGE)"/>
           </template>
         </WallNavigation>
       </template>

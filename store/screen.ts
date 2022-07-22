@@ -1,6 +1,5 @@
 import _ from 'lodash'
 
-
 export class Screen {
     public ref: HTMLElement = null
 
@@ -22,7 +21,7 @@ export class Screen {
         }
     }
 
-    scrollTo() {
+    goTo() {
         this.ref.scrollIntoView({behavior: "smooth", block: "center"})
     }
 }
@@ -37,6 +36,7 @@ export const CLUBS = new Screen('clubs', 100)
 export const FLAG_PARADE = new Screen('flag-parade', 100)
 export const FESTIVAL_INFO = new Screen('festival-info', 100)
 
+export const ALL_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS, FLAG_PARADE, FESTIVAL_INFO}
 export const TOP_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS}
 
 export const TOTAL_WIDTH = _.sumBy(Object.values(TOP_SCREENS), 'width');
