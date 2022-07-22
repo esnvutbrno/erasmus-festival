@@ -29,8 +29,8 @@
     }
 
     .Bg__grass-line {
-        @apply bg-repeat-x;
-        background-image: url("~/assets/svg/grass.svg");
+        @apply bg-repeat-x bg-contain;
+        background-image: url("~/assets/img/grass-line.png");
     }
 }
 

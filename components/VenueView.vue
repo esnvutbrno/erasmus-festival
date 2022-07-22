@@ -18,7 +18,7 @@ onMounted(() => {
       <div class="View__bgs" :style="{width: `${TOTAL_WIDTH}vw`}">
         <!-- backgrounds -->
         <div class="Bg__brick"></div>
-        <div class="Bg__grass-line h-12 -mt-12 z-10"></div>
+        <div class="Bg__grass-line h-16 -mt-16 z-10 relative"></div>
         <div class="Bg__grass z-0"></div>
       </div>
 
