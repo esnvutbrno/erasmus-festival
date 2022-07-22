@@ -1,7 +1,9 @@
 <script setup lang="ts">
+
 defineProps<{
   klass?: string
 }>()
+const slots = useSlots()
 </script>
 
 <template>
@@ -10,6 +12,7 @@ defineProps<{
     :class="[klass || 'h-[55%]']"
   >
     <h2
+      v-if="slots.default"
       @click="$emit('headingClick')"
       class="
         font-festival text-white text-2xl md:text-5xl lg:text-8xl

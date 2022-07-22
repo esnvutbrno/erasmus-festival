@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import {onMounted} from 'vue'
-import {CHILL, CLUBS, FOOD, STAGE, TOTAL_WIDTH} from '~/store/screen'
+import {CHILL, CLUBS, FOOD, STAGE, BANDS, TOTAL_WIDTH} from '~/store/screen'
 import Wall from "~/components/Wall.vue";
 import SimpleArrow from "~/components/SimpleArrow.vue";
+import ArrowSign from "~/components/ArrowSign.vue";
 
 
 onMounted(() => {
@@ -24,41 +25,41 @@ onMounted(() => {
         <div class="Bg__grass z-0"></div>
       </div>
 
+
       <div class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
         <FoodScreen/>
       </div>
-      <div class="View__screen" v-bind="STAGE.elAttrs">
-        <StageScreen/>
-      </div>
-      <div class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
-        <!-- wall part -->
-        <Wall @headingClick="CHILL.scrollTo()">
-          <span>CHILL</span>
-          <span class="ml-32">ZONE</span>
+
+      <div class="View__screen bg-gray-600" v-bind="BANDS.elAttrs">
+        <Wall>
+          <span>BANDS</span>
 
           <template #append>
             <WallNavigation>
               <template #left>
-                <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>
+                <ArrowSign
+                  alt="Go to food section"
+                  title="Curious or hungry?"
+                  dir="left"
+                  text="FOOD"
+                  class="w-40"
+                  @click="FOOD.scrollTo()"
+                ></ArrowSign>
               </template>
+
               <template #right>
-                <button
-                  class="w-56 transition-transform hover:translate-x-1 drop-shadow-xl"
-                  @click="CLUBS.scrollTo()"
-                >
-                  <img
-                    class="w-full"
-                    src="~/assets/svg/students-sign.svg?url"
-                    alt="Students clubs in Brno"
-                  >
-                </button>
+                <SimpleArrow dir="right" @click="STAGE.scrollTo()"/>
               </template>
             </WallNavigation>
           </template>
         </Wall>
+      </div>
 
-        <!--      <button @click="STAGE.scrollTo()">&lt;</button>-->
-        <!--      <button @click="CLUBS.scrollTo()">&gt;</button>-->
+      <div class="View__screen" v-bind="STAGE.elAttrs">
+        <StageScreen/>
+      </div>
+      <div class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
+        <ChillScreen />
       </div>
       <div class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
         <Wall @headingClick="CLUBS.scrollTo()">

@@ -27,11 +27,15 @@ export class Screen {
     }
 }
 
-export const FOOD = new Screen('food', 80)
+
+export const FOOD = new Screen('food', 100)
+export const BANDS = new Screen('bands', 100)
 export const STAGE = new Screen('stage', 100)
-export const CHILL = new Screen('chill', 60)
-export const CLUBS = new Screen('clubs', 60)
+export const CHILL = new Screen('chill', 100)
+export const CLUBS = new Screen('clubs', 100)
 
-export const SCREENS: Record<string, Screen> = {FOOD, STAGE, CHILL, CLUBS}
+export const FLAG_PARADE = new Screen('flag-parade', 100)
 
-export const TOTAL_WIDTH = _.sumBy(Object.values(SCREENS), 'width');
+export const TOP_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS}
+
+export const TOTAL_WIDTH = _.sumBy(Object.values(TOP_SCREENS), 'width');

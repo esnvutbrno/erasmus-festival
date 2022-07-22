@@ -1,12 +1,15 @@
+<script setup lang="ts">
+import {FLAG_PARADE} from "~/store/screen";
 
-
+</script>
 <template>
   <NuxtLayout>
-    <VenueView />
+    <VenueView/>
 
-
-
-    <div class="bg-lime-600 h-screen text-white text-4xl xl:text-8xl flex flex-row justify-center items-center">
+    <div
+      class="bg-lime-600 h-screen text-white text-4xl xl:text-8xl flex flex-row justify-center items-center"
+      v-bind="FLAG_PARADE.elAttrs"
+    >
       FLAG PARADE
     </div>
     <div class="bg-blue-800 mx-auto max-w-6xl py-8">

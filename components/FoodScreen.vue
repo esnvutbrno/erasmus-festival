@@ -3,14 +3,23 @@ import HeyCactusSvg from '../assets/svg/cactus.svg?component'
 import HungryBullSvg from '../assets/svg/bull.svg?component'
 import FoodLine from "./FoodLine";
 import WallHeading from "./Wall";
-import WallNavigation from "./WallNavigation";</script>
+import WallNavigation from "./WallNavigation";
+import {STAGE} from '../store/screen'
+
+</script>
 
 <template>
   <div class="h-full relative">
-    <!--      wall part -->
     <WallHeading klass="h-1/3">
       <span>FEELING</span>
       <span class="ml-16 lg:ml-32">HUNGRY?</span>
+      <template #append>
+        <WallNavigation>
+          <template #right>
+            <SimpleArrow dir="right" @click="STAGE.scrollTo()"/>
+          </template>
+        </WallNavigation>
+      </template>
     </WallHeading>
 
     <div class="h-2/3 flex flex-col">

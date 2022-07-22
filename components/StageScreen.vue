@@ -1,80 +1,80 @@
 <script setup lang="ts">
-import {FOOD, STAGE, CHILL} from '~/store/screen';
+import {FOOD, STAGE, BANDS, CHILL, FLAG_PARADE} from '~/store/screen';
 import StageSvg from '~/assets/svg/stage.svg?component'
+import FansSvg from '~/assets/svg/fans.svg?component'
 import FestivalBannerSvg from '~/assets/svg/festival-banner.svg?component'
 import FoodSignSvg from '~/assets/svg/food-sign.svg?component'
 import ChillSignSvg from '~/assets/svg/chill-sign.svg?component'
-
+import SimpleArrow from "~/components/SimpleArrow.vue";
+import WallNavigation from "~/components/WallNavigation.vue";
 
 </script>
 
 <template>
-  <div class="
-    relative w-full h-full
-    flex flex-col justify-center
-    items-center
-  ">
-<!--    &lt;!&ndash; wall part &ndash;&gt;-->
-<!--    <div class="relative h-[55%]">-->
-<!--      <WallNavigation>-->
-<!--        <template #left>-->
-<!--          <SimpleArrow dir="left" @click="STAGE.scrollTo()"/>-->
-<!--        </template>-->
-<!--      </WallNavigation>-->
-<!--    </div>-->
+  <div class="h-full relative">
+    <Wall>
+      <template #append>
+        <WallNavigation>
+          <template #left>
+            <ArrowSign
+              alt="Go to bands section"
+              title="Music fan?"
+              dir="left"
+              text="BANDS"
+              class="w-40"
+              @click="BANDS.scrollTo()"
+            ></ArrowSign>
 
-    <div class="relative mt-8 w-5/6 lg:w-4/5 xl:w-3/4 max-h-[65vh] mb-56 basis-4/5">
+            <ArrowSign
+              alt="Go to food section"
+              title="Curious or hungry?"
+              dir="left"
+              text="FOOD"
+              class="w-40"
+              @click="FOOD.scrollTo()"
+            ></ArrowSign>
+          </template>
+          <template #right>
+            <ArrowSign
+              alt="Go to chill section"
+              title="Chill-zone, best place for all"
+              dir="right"
+              text="CHILL"
+              class="w-40"
+              @click="CHILL.scrollTo()"
+            ></ArrowSign>
+          </template>
+        </WallNavigation>
+      </template>
+    </Wall>
+
+
+    <div class="h-[45%] relative">
       <!-- stage itself -->
       <StageSvg
-        class="cursor-pointer max-h-full mx-auto"
+        class="
+          absolute inset-x-0 mx-auto bottom-3/4
+          cursor-pointer max-h-[65vh]
+        "
         @click="STAGE.scrollTo()"
       />
-    </div>
 
-    <div class="
-      absolute left-0 right-0 top-1/2
-      flex flex-col sm:flex-row
-      justify-evenly items-start
+      <FansSvg
+        class="
+          absolute bottom-4 inset-x-0 w-4/5 mx-auto max-h-[35vh]
+      "></FansSvg>
 
-      lg:justify-between lg:px-24
-      xl:top-1/3
-    ">
-      <FoodSignSvg
-        alt="Go to food section"
-        title="Curious or hungry?"
-        class="
-          w-48 lg: h-max
-          relative cursor-pointer
-          duration-300 transition-transform origin-bottom-right lg:-rotate-6 lg:hover:rotate-[-9deg]
-        "
-        @click="FOOD.scrollTo()"
-      />
-      <ChillSignSvg
-        alt="Go to chill section"
-        title="Chill-zone, best place for all"
-        class="
-          w-48 lg: h-max
-          relative cursor-pointer
-          duration-300 transition-transform origin-bottom-left lg:rotate-12 lg:hover:rotate-[15deg]
-        "
-        @click="CHILL.scrollTo()"
-      />
+      <WallNavigation>
+        <template #right>
+          <SimpleArrow
+            @click="FLAG_PARADE.scrollTo()"
+            dir="down"
+            class="text-white font-festival text-4xl"
+          >
+            vvv
+          </SimpleArrow>
+        </template>
+      </WallNavigation>
     </div>
   </div>
 </template>
-
-
-<style>
-#food-sign-stick,
-#chill-sign-stick {
-  display: none;
-}
-
-@media (min-width: 1024px) {
-  #food-sign-stick,
-  #chill-sign-stick {
-    display: unset;
-  }
-}
-
-</style>
