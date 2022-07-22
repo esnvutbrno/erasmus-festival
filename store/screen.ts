@@ -22,7 +22,7 @@ export class Screen {
     }
 
     goTo() {
-        this.ref.scrollIntoView({behavior: "smooth", block: "center"})
+        this.ref.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
     }
 }
 

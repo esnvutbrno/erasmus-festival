@@ -15,7 +15,7 @@ const slots = useSlots()
       v-if="slots.default"
       @click="$emit('headingClick')"
       class="
-        font-festival text-white text-2xl md:text-5xl lg:text-8xl
+        font-festival text-white text-3xl md:text-5xl lg:text-8xl
 
         drop-shadow-xl
         inline-block flex flex-col justify-center items-center

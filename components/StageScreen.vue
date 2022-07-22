@@ -24,7 +24,7 @@ const view = useView()
               title="Music fan?"
               dir="left"
               text="BANDS"
-              class="w-40"
+              class="w-32 lg:w-40"
               @click="view.goTo(BANDS)"
             ></ArrowSign>
 
@@ -33,7 +33,7 @@ const view = useView()
               title="Curious or hungry?"
               dir="left"
               text="FOOD"
-              class="w-40"
+              class="w-32 lg:w-40"
               @click="view.goTo(FOOD)"
             ></ArrowSign>
           </template>
@@ -43,7 +43,7 @@ const view = useView()
               title="Chill-zone, best place for all"
               dir="right"
               text="CHILL"
-              class="w-40"
+              class="w-32 lg:w-40"
               @click="view.goTo(CHILL)"
             ></ArrowSign>
           </template>
@@ -64,15 +64,16 @@ const view = useView()
 
       <FansSvg
         class="
-          absolute bottom-4 inset-x-0 w-4/5 mx-auto max-h-[35vh]
+          absolute inset-x-0 w-4/5 mx-auto max-h-[35vh]
+          bottom-20 lg:bottom-4
       "></FansSvg>
 
-      <WallNavigation>
+      <WallNavigation disable-auto-placement class="inset-x-0 bottom-4">
         <template #right>
           <SimpleArrow
             @click="view.goTo(FLAG_PARADE)"
             dir="down"
-            class="text-white font-festival text-4xl"
+            class="text-white font-festival text-4xl w-screen"
           >
             vvv
           </SimpleArrow>

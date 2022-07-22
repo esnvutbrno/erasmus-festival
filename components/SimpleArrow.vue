@@ -11,7 +11,7 @@ const slots = useSlots()
       dir === 'left' ? 'hover:-translate-x-1' : '',
       dir === 'right' ? 'hover:translate-x-1' : '',
       dir === 'down' ? 'hover:translate-y-1' : '',
-      !slots.default ? 'font-festival text-white opacity-80 text-6xl' : '',
+      !slots.default ? 'font-festival text-white opacity-80 text-4xl lg:text-6xl' : '',
     ]"
   >
     <slot></slot>

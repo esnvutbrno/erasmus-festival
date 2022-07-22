@@ -8,7 +8,7 @@ const view = useView()
   <!-- wall part -->
   <Wall @headingClick="view.goTo(CHILL)">
     <span>CHILL</span>
-    <span class="ml-32">ZONE</span>
+    <span class="ml-8 md:ml-16 lg:ml-32">ZONE</span>
 
     <template #append>
       <WallNavigation>
@@ -17,7 +17,10 @@ const view = useView()
         </template>
         <template #right>
           <button
-            class="w-56 transition-transform hover:translate-x-1 drop-shadow-xl"
+            class="
+              w-44 lg:w-56
+              transition-transform hover:translate-x-1 drop-shadow-xl
+            "
             @click="view.goTo(CLUBS)"
           >
             <img

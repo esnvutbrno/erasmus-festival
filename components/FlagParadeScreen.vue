@@ -10,7 +10,11 @@ const view = useView()
     <div
       class="flex flex-col justify-center items-center"
     >
-      <h2 class="mt-16 text-white text-4xl xl:text-8xl font-festival drop-shadow-2xl">
+      <h2
+        class="mt-16 text-white text-4xl xl:text-8xl font-festival drop-shadow-2xl cursor-pointer"
+        @click="view.goTo(FLAG_PARADE)"
+
+      >
         FLAG
         PARADE
       </h2>
@@ -20,12 +24,12 @@ const view = useView()
     </div>
 
 
-    <WallNavigation>
+    <WallNavigation disable-auto-placement class="inset-x-0 bottom-4">
       <template #right>
         <SimpleArrow
           @click="view.goTo(FESTIVAL_INFO)"
           dir="down"
-          class="text-white font-festival text-4xl"
+          class="text-white font-festival text-4xl w-full"
         >
           vvv
         </SimpleArrow>

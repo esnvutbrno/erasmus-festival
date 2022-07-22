@@ -59,7 +59,7 @@ const view = useView()
       <section class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
         <Wall @headingClick="CLUBS.goTo()">
           <span>Students</span>
-          <span class="ml-32">in Brno</span>
+          <span class="ml-16 lg:ml-32">in Brno</span>
 
           <template #append>
             <WallNavigation>
