@@ -11,7 +11,13 @@ import ESNBrnoUnitedWhiteSvg from '../assets/svg/esn-bu-logo-white.svg?component
   >
     <h1 class="font-festival text-white text-5xl text-center py-8">Erasmus Festival </h1>
     <article class="max-w-xl mx-auto">
-      <p class="text-white font-xl py-4" v-for="_ in Array(4)">
+      <p class="text-white font-xl py-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aperiam,
+        asperiores dolorem eaque earum eius hic necessitatibus nesciunt nobis non perferendis quas recusandae saepe
+        suscipit tenetur voluptate! Facilis, quaerat!
+      </p>
+
+      <p class="text-red-300 font-xl py-4">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aperiam,
         asperiores dolorem eaque earum eius hic necessitatibus nesciunt nobis non perferendis quas recusandae saepe
         suscipit tenetur voluptate! Facilis, quaerat!
