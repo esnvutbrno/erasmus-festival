@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-4db98c79.mjs",
+    "file": "entry-1bc7fa5c.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -9,7 +9,7 @@
       "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs"
     ],
     "css": [
-      "entry.0e46afef.css"
+      "entry.6ad44a86.css"
     ],
     "assets": [
       "students-sign.4f4f38a8.svg",
@@ -22,7 +22,7 @@
     ]
   },
   "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs": {
-    "file": "error-component-6fab78ad.mjs",
+    "file": "error-component-ebb2c4e7.mjs",
     "src": "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -34,31 +34,31 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-93d62c86.mjs",
+    "file": "index-b5f70e4e.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_useView-ca5867e4.mjs"
+      "_useView-fbf0d07f.mjs"
     ]
   },
-  "_useView-ca5867e4.mjs": {
-    "file": "useView-ca5867e4.mjs",
+  "_useView-fbf0d07f.mjs": {
+    "file": "useView-fbf0d07f.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "layouts/default.vue": {
-    "file": "default-0946738c.mjs",
+    "file": "default-c5bccdfb.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_useView-ca5867e4.mjs"
+      "_useView-fbf0d07f.mjs"
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
-    "file": "error-404-2d3bb4d5.mjs",
+    "file": "error-404-d95d0fe8.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -69,7 +69,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
-    "file": "error-500-a53449cd.mjs",
+    "file": "error-500-33acd6e7.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
