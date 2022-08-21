@@ -1,5 +1,6 @@
 @import url(./stage.css);
 @import url(./screens.css);
+@import url("leaflet/dist/leaflet.css");
 
 @tailwind base;
 @tailwind components;

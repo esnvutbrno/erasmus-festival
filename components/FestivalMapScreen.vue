@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 import { LMap, LTileLayer, LMarker, LTooltip, LIcon } from "@vue-leaflet/vue-leaflet";
-import "leaflet/dist/leaflet.css";
 
 const zoom = ref(16);
 const center = [49.198626, 16.601318];
