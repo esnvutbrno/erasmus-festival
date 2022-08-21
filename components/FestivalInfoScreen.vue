@@ -27,5 +27,7 @@ import ESNBrnoUnitedWhiteSvg from '../assets/svg/esn-bu-logo-white.svg?component
     <ESNBrnoUnitedWhiteSvg
       class="w-64 mx-auto my-8 px-8"
     />
+
+    <FestivalMapScreen class="snap-start	"/>
   </section>
 </template>
