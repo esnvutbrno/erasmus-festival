@@ -21,41 +21,41 @@ const center = [49.198626, 16.601318];
     >
       MAP OF THE FESTIVAL
     </h3>
-    <l-map
+    <LMap
       ref="map"
       v-model:zoom="zoom"
       style="height: 75vh"
       v-model:center="center"
     >
-      <l-tile
+      <LTileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         layer-type="base"
         name="OpenStreetMap"
       />
-      <l-marker :lat-lng="[49.2004081, 16.5985861]">
-        <l-icon
+      <LMarker :lat-lng="[49.2004081, 16.5985861]">
+        <LIcon
           :icon-size="[50, 50]"
           :icon-anchor="[25, 25]"
           icon-url="/assets/img/icons/stage.png"
         />
-        <l-tooltip>
+        <LTooltip>
           <strong>Faculty of Arts – Masaryk University</strong><br>
           Main stage
-        </l-tooltip>
-      </l-marker>
-      <l-marker :lat-lng="[49.196665, 16.603262]">
+        </LTooltip>
+      </LMarker>
+      <LMarker :lat-lng="[49.196665, 16.603262]">
         <l-icon
           :icon-size="[50, 50]"
           :icon-anchor="[25, 25]"
           icon-url="/assets/img/icons/flag-parade.png"
         />
-        <l-tooltip>
+        <LTooltip>
           <strong>Statue of T. G. Masaryk</strong><br>
           Beggining of Flag Parade
-        </l-tooltip>
-      </l-marker>
+        </LTooltip>
+      </LMarker>
       
-    </l-map>
+    </LMap>
   </div>
 </template>
 <style lang="">
