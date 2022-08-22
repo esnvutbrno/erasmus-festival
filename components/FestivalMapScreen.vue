@@ -2,11 +2,12 @@
 import { ref } from 'vue';
 import { LMap, LTileLayer, LMarker, LTooltip, LIcon } from "@vue-leaflet/vue-leaflet";
 
-const zoom = ref(16);
+const zoom = ref(17);
 const center = [49.198626, 16.601318];
+
 </script>
 <template>
-  <div>
+  <div class="h-screen flex flex-col">
     <h3
       class="
         mt-16
@@ -22,15 +23,18 @@ const center = [49.198626, 16.601318];
     </h3>
     <LMap
       ref="map"
+      class="flex-grow"
       v-model:zoom="zoom"
-      style="height: 75vh"
       v-model:center="center"
+      :min-zoom=7
+      :max-bounds="[[51.2, 12], [48.5, 19]]"
     >
-      <LTileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        layer-type="base"
-        name="OpenStreetMap"
-      />
+<!--      <LTileLayer-->
+<!--        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"-->
+<!--        layer-type="base"-->
+<!--        name="OpenStreetMap"-->
+<!--      />-->
+      <LTileLayer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"></LTileLayer>
       <LMarker :lat-lng="[49.2004081, 16.5985861]">
         <LIcon
           :icon-size="[50, 50]"
@@ -53,7 +57,7 @@ const center = [49.198626, 16.601318];
           Beggining of Flag Parade
         </LTooltip>
       </LMarker>
-      
+
     </LMap>
   </div>
 </template>
