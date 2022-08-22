@@ -2,6 +2,9 @@
 import { ref } from 'vue';
 import { LMap, LTileLayer, LMarker, LTooltip, LIcon } from "@vue-leaflet/vue-leaflet";
 
+import stageIconUrl from '../assets/img/icons/stage.png'
+import flagParadeIconUrl from '../assets/img/icons/flag-parade.png'
+
 const zoom = ref(17);
 const center = [49.198626, 16.601318];
 
@@ -39,7 +42,7 @@ const center = [49.198626, 16.601318];
         <LIcon
           :icon-size="[50, 50]"
           :icon-anchor="[25, 25]"
-          icon-url="/assets/img/icons/stage.png"
+          :icon-url="stageIconUrl"
         />
         <LTooltip>
           <strong>Faculty of Arts – Masaryk University</strong><br>
@@ -50,7 +53,7 @@ const center = [49.198626, 16.601318];
         <l-icon
           :icon-size="[50, 50]"
           :icon-anchor="[25, 25]"
-          icon-url="/assets/img/icons/flag-parade.png"
+          :icon-url="flagParadeIconUrl"
         />
         <LTooltip>
           <strong>Statue of T. G. Masaryk</strong><br>
