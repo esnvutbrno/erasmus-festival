@@ -23,29 +23,8 @@ const view = useView()
         <FoodScreen/>
       </section>
 
-      <section class="View__screen bg-gray-600" v-bind="BANDS.elAttrs">
-        <Wall>
-          <span>BANDS</span>
-
-          <template #append>
-            <WallNavigation>
-              <template #left>
-                <ArrowSign
-                  alt="Go to food section"
-                  title="Curious or hungry?"
-                  dir="left"
-                  text="FOOD"
-                  class="w-40"
-                  @click="view.goTo(FOOD)"
-                ></ArrowSign>
-              </template>
-
-              <template #right>
-                <SimpleArrow dir="right" @click="view.goTo(STAGE)"/>
-              </template>
-            </WallNavigation>
-          </template>
-        </Wall>
+      <section class="View__screen bg-gray-200" v-bind="BANDS.elAttrs">
+        <BandsScreen />
       </section>
 
       <section class="View__screen" v-bind="STAGE.elAttrs">

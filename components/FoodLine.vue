@@ -12,6 +12,8 @@ defineProps({
     p-8
     gap-x-16 lg:gap-x-32
     gap-y-8 lg:gap-y-0
+
+    hover:scale-105 transition-transform
   ">
     <!-- icon line -->
 
