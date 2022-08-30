@@ -10,18 +10,18 @@ import ESNBrnoUnitedWhiteSvg from '../assets/svg/esn-bu-logo-white.svg?component
     class="bg-blue-800 mx-auto max-w-6xl py-8 min-h-screen"
   >
     <h1 class="font-festival text-white text-5xl text-center py-8">Erasmus Festival </h1>
+    <h2 class="text-white text-3xl text-center py-4">17th of September, Brno</h2>
     <article class="max-w-xl mx-auto">
       <p class="text-white font-xl py-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aperiam,
-        asperiores dolorem eaque earum eius hic necessitatibus nesciunt nobis non perferendis quas recusandae saepe
-        suscipit tenetur voluptate! Facilis, quaerat!
+        Music & chill. Even more waiting for you in the one and only music festival for foreigners in Brno. Let's celebrate 35th birthday of Erasmus project in a style.
+        More info coming soon! Save the date. Cannot miss this.
       </p>
 
-      <p class="text-red-300 font-xl py-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aperiam,
-        asperiores dolorem eaque earum eius hic necessitatibus nesciunt nobis non perferendis quas recusandae saepe
-        suscipit tenetur voluptate! Facilis, quaerat!
-      </p>
+<!--      <p class="text-red-300 font-xl py-4">-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi aperiam,-->
+<!--        asperiores dolorem eaque earum eius hic necessitatibus nesciunt nobis non perferendis quas recusandae saepe-->
+<!--        suscipit tenetur voluptate! Facilis, quaerat!-->
+<!--      </p>-->
     </article>
 
     <ESNBrnoUnitedWhiteSvg
