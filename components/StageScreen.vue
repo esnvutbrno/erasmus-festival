@@ -24,7 +24,7 @@ const view = useView()
               title="Music fan?"
               dir="left"
               text="BANDS"
-              class="w-32 lg:w-40 lg:translate-y-40 origin-bottom transition-transform hover:rotate-2 cursor-pointer"
+              class="w-32 lg:w-40 lg:translate-y-40 origin-bottom transition-transform hover:-rotate-2 cursor-pointer"
               @click="view.goTo(BANDS)"
             ></ArrowSign>
 
