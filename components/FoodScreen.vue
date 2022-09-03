@@ -1,6 +1,7 @@
 <script setup>
 import HeyCactusSvg from '../assets/svg/cactus.svg?component'
 import HungryBullSvg from '../assets/svg/bull.svg?component'
+import HomeRightSvg from '../assets/svg/home-right.svg?component'
 import FoodLine from "./FoodLine";
 import Wall from "./Wall";
 import WallNavigation from "./WallNavigation";
@@ -18,7 +19,7 @@ const view = useView()
       <template #append>
         <WallNavigation>
           <template #right>
-            <SimpleArrow dir="right" @click="view.goTo(STAGE)"/>
+            <HomeRightSvg @click="view.goTo(STAGE)" class="transition-transform hover:translate-x-2 w-40 cursor-pointer"/>
           </template>
         </WallNavigation>
       </template>

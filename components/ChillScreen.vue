@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {CHILL, STAGE, CLUBS} from "~/store/screen";
 import {useView} from "~/composables/useView";
-
+import HomeLeftSvg from '../assets/svg/home-left.svg?component'
 const view = useView()
 </script>
 <template>
@@ -13,7 +13,7 @@ const view = useView()
     <template #append>
       <WallNavigation>
         <template #left>
-          <SimpleArrow dir="left" @click="view.goTo(STAGE)"/>
+          <HomeLeftSvg @click="view.goTo(STAGE)" class="transition-transform hover:-translate-x-2 w-40 cursor-pointer"/>
         </template>
         <template #right>
           <button

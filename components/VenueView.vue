@@ -36,30 +36,7 @@ const view = useView()
       </section>
 
       <section class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
-        <Wall @headingClick="CLUBS.goTo()">
-          <span>Students</span>
-          <span class="ml-16 lg:ml-32">in Brno</span>
-
-          <template #append>
-            <WallNavigation>
-              <template #left>
-                <SimpleArrow dir="left" @click="view.goTo(STAGE)"/>
-              </template>
-              <template #right>
-
-                <ArrowSign
-                  alt="Go to partners section"
-                  title="All our lovely partners"
-                  dir="right"
-                  font-size="35"
-                  text="PARTNERS"
-                  class="w-32 lg:w-40 translate-y-6"
-                  @click="view.goTo(PARTNERS)"
-                ></ArrowSign>
-              </template>
-            </WallNavigation>
-          </template>
-        </Wall>
+        <ClubsScreen />
       </section>
 
       <section class="View__screen" v-bind="PARTNERS.elAttrs">
