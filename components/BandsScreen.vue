@@ -3,6 +3,10 @@ import {useView} from "../composables/useView";
 import {FOOD, STAGE} from "../store/screen";
 import WallNavigation from './WallNavigation.vue'
 const view = useView();
+
+import TailsSvg from '../assets/svg/tails.svg?component'
+import FallsSvg from '../assets/svg/falls.svg?component'
+import CfHSvg from '../assets/svg/cfh.svg?component'
 </script>
 <template>
   <div class="h-full">
@@ -27,23 +31,20 @@ const view = useView();
 
         <div class="h-2/3 lg:h-full w-4/5 lg:w-2/3 flex flex-col justify-center relative mb-auto">
           <div class="flex flex-row w-full justify-center justify-self-center h-1/2 pt-8">
-            <img
-              src="../assets/svg/tails.svg"
+            <TailsSvg
               alt="The Tails"
               class="max-w-[50%] max-h-full transition-transform hover:scale-95"
-            >
-            <img
-              src="../assets/svg/falls.svg"
+            />
+            <FallsSvg
               alt="Break Falls"
               class="max-w-[50%] max-h-full transition-transform hover:scale-95"
-            >
+            />
           </div>
 
-          <img
-            src="../assets/svg/cfh.svg"
+          <CfHSvg
             alt="Call from Home"
             class="w-4/5 mx-auto h-1/2 transition-transform hover:scale-95"
-          >
+          />
         </div>
       </template>
     </Wall>
