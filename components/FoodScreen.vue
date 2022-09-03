@@ -28,7 +28,7 @@ const view = useView()
       <FoodLine color="text-yellow-200">
         <template #icon>
           <HeyCactusSvg
-            class="w-1/2 max-h-full max-w-max drop-shadow-2xl"
+            class="w-1/2 max-h-full max-w-max drop-shadow-2xl hover:scale-105 transition-transform"
           />
         </template>
         <template #title>Hey, Cactus!</template>
@@ -44,6 +44,7 @@ const view = useView()
             class="
               w-1/2 max-h-full max-w-max drop-shadow-2xl
               mr-4 sm:mr-6 lg:mr-12
+              hover:scale-105 transition-transform
             "
           />
         </template>

@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import {FOOD, STAGE, BANDS, CHILL, FLAG_PARADE} from '~/store/screen';
+import {FOOD, STAGE, PARTNERS, BANDS, CHILL, FLAG_PARADE} from '~/store/screen';
 import StageSvg from '~/assets/svg/stage.svg?component'
 import FansSvg from '~/assets/svg/fans.svg?component'
-import FestivalBannerSvg from '~/assets/svg/festival-banner.svg?component'
-import FoodSignSvg from '~/assets/svg/food-sign.svg?component'
-import ChillSignSvg from '~/assets/svg/chill-sign.svg?component'
+import MoreSignSvg from '~/assets/svg/more-sign.svg?component'
+import PartnersSignSvg from '~/assets/svg/partners-sign.svg?component'
 import SimpleArrow from "~/components/SimpleArrow.vue";
 import WallNavigation from "~/components/WallNavigation.vue";
 import {useView} from "~/composables/useView";
+import ArrowSign from "~/components/ArrowSign.vue";
 
 const view = useView()
 
@@ -24,7 +24,7 @@ const view = useView()
               title="Music fan?"
               dir="left"
               text="BANDS"
-              class="w-32 lg:w-40"
+              class="w-32 lg:w-40 lg:translate-y-40 origin-bottom transition-transform hover:rotate-2 cursor-pointer"
               @click="view.goTo(BANDS)"
             ></ArrowSign>
 
@@ -33,19 +33,27 @@ const view = useView()
               title="Curious or hungry?"
               dir="left"
               text="FOOD"
-              class="w-32 lg:w-40"
+              class="w-32 lg:w-40 lg:translate-y-6 -translate-y-24"
               @click="view.goTo(FOOD)"
             ></ArrowSign>
           </template>
           <template #right>
+            <PartnersSignSvg
+              alt="Go to partners section"
+              title="See our partners"
+              @click="view.goTo(PARTNERS)"
+              class="w-32 lg:w-40 lg:translate-y-40 origin-bottom transition-transform hover:rotate-2 cursor-pointer"
+            ></PartnersSignSvg>
+
             <ArrowSign
               alt="Go to chill section"
               title="Chill-zone, best place for all"
               dir="right"
               text="CHILL"
-              class="w-32 lg:w-40"
+              class="w-32 lg:w-40 lg:translate-y-6 -translate-y-24"
               @click="view.goTo(CHILL)"
             ></ArrowSign>
+
           </template>
         </WallNavigation>
       </template>
@@ -68,15 +76,14 @@ const view = useView()
           bottom-20 lg:bottom-4
       "></FansSvg>
 
-      <WallNavigation disable-auto-placement class="inset-x-0 bottom-4">
+      <WallNavigation disable-auto-placement disable-vertical-placement class="inset-x-0 bottom-4 top-[unset]">
         <template #right>
-          <SimpleArrow
-            @click="view.goTo(FLAG_PARADE)"
-            dir="down"
-            class="text-white font-festival text-4xl w-screen"
-          >
-            vvv
-          </SimpleArrow>
+          <div class="w-screen flex flex-row justify-center">
+            <MoreSignSvg
+              @click="view.goTo(FLAG_PARADE)"
+              class="transition-transform hover:translate-y-2 cursor-pointer w-48"
+            ></MoreSignSvg>
+          </div>
         </template>
       </WallNavigation>
     </div>

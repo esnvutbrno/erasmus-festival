@@ -4,13 +4,14 @@ import { LMap, LTileLayer, LMarker, LTooltip, LIcon } from "@vue-leaflet/vue-lea
 
 import stageIconUrl from '../assets/img/icons/stage.png'
 import flagParadeIconUrl from '../assets/img/icons/flag-parade.png'
+import {FESTIVAL_MAP} from "../store/screen";
 
 const zoom = ref(17);
 const center = [49.198626, 16.601318];
 
 </script>
 <template>
-  <div class="h-screen flex flex-col">
+  <div class="h-screen flex flex-col bg-[#000040]" v-bind="FESTIVAL_MAP.elAttrs">
     <h3
       class="
         mt-16

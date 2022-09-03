@@ -12,10 +12,10 @@ const slots = useSlots();
   <div
     class="
       absolute
-      flex flex-row items-center lg:items-end
+      flex flex-row items-start lg:items-end
     "
     :class="{
-      'top-10 bottom-[unset] lg:top-[unset] lg:bottom-10': !disableVerticalPlacement,
+      'top-6 bottom-[unset] lg:top-[unset] lg:bottom-10': !disableVerticalPlacement,
       'left-6 lg:left-10 right-6 lg:right-10': !disableVerticalPlacement,
       'justify-between': !enableCentering,
       'justify-center': enableCentering
@@ -24,6 +24,7 @@ const slots = useSlots();
     <div class="flex flex-col gap-y-4">
       <slot name="left"/>
     </div>
+    <slot name="center"/>
     <div class="flex flex-col gap-y-4">
       <slot name="right"/>
     </div>
