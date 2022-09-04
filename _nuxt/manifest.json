@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-a17afba2.mjs",
+    "file": "entry-ca9cdddc.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -24,7 +24,7 @@
     ]
   },
   "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs": {
-    "file": "error-component-0d6b77c6.mjs",
+    "file": "error-component-09ded36b.mjs",
     "src": "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -36,38 +36,38 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-97ff4c9c.mjs",
+    "file": "index-c52cb50b.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_useView-e3229fd6.mjs"
+      "_useView-41dd2314.mjs"
     ],
     "dynamicImports": [
       "node_modules/leaflet/dist/images/marker-icon-2x.png",
       "node_modules/leaflet/dist/images/marker-icon.png",
       "node_modules/leaflet/dist/images/marker-shadow.png",
       "node_modules/leaflet/dist/leaflet-src.esm.js",
-      "_leaflet-src-29d2a2f0.mjs"
+      "_leaflet-src-b3650daa.mjs"
     ]
   },
-  "_useView-e3229fd6.mjs": {
-    "file": "useView-e3229fd6.mjs",
+  "_useView-41dd2314.mjs": {
+    "file": "useView-41dd2314.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "layouts/default.vue": {
-    "file": "default-5b95608b.mjs",
+    "file": "default-5cde93f7.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_useView-e3229fd6.mjs"
+      "_useView-41dd2314.mjs"
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
-    "file": "error-404-419bd3af.mjs",
+    "file": "error-404-3bb604ca.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -78,7 +78,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
-    "file": "error-500-8a818efa.mjs",
+    "file": "error-500-1eb6888d.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -108,8 +108,8 @@
     "src": "node_modules/leaflet/dist/leaflet-src.esm.js",
     "isDynamicEntry": true
   },
-  "_leaflet-src-29d2a2f0.mjs": {
-    "file": "leaflet-src-29d2a2f0.mjs",
+  "_leaflet-src-b3650daa.mjs": {
+    "file": "leaflet-src-b3650daa.mjs",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
