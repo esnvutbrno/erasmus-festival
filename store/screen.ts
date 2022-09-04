@@ -39,7 +39,7 @@ export const FLAG_PARADE = new Screen('flag-parade', 100)
 export const FESTIVAL_INFO = new Screen('festival-info', 100)
 export const FESTIVAL_MAP = new Screen('festival-map', 100)
 
-export const ALL_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS, FLAG_PARADE, FESTIVAL_INFO, FESTIVAL_MAP}
+export const ALL_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS, PARTNERS, FLAG_PARADE, FESTIVAL_INFO, FESTIVAL_MAP}
 export const TOP_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS}
 
 export const TOTAL_WIDTH = _.sumBy(Object.values(TOP_SCREENS), 'width');

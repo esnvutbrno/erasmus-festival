@@ -7,7 +7,7 @@
 }
 
 .View__screen {
-    @apply h-full flex-shrink-0 snap-start;
+    @apply min-h-full flex-shrink-0 snap-start;
 }
 
 .View__bgs {
