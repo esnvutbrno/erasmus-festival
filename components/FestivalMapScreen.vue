@@ -1,17 +1,29 @@
 <script setup>
-import { ref } from 'vue';
-import { LMap, LTileLayer, LMarker, LTooltip, LIcon } from "@vue-leaflet/vue-leaflet";
+import { ref } from "vue";
+import {
+  LMap,
+  LTileLayer,
+  LMarker,
+  LTooltip,
+  LIcon,
+} from "@vue-leaflet/vue-leaflet";
 
-import stageIconUrl from '../assets/img/icons/stage.png'
-import flagParadeIconUrl from '../assets/img/icons/flag-parade.png'
-import {FESTIVAL_MAP} from "../store/screen";
+import stageIconUrl from "../assets/img/icons/stage.png";
+import flagParadeIconUrl from "../assets/img/icons/flag-parade.png";
+import { FESTIVAL_PROGRAMME, FESTIVAL_MAP } from "../store/screen";
+import { useView } from "~/composables/useView";
+import MoreSignSvg from "~/assets/svg/more-sign.svg?component";
+
+const view = useView();
 
 const zoom = ref(17);
 const center = [49.198626, 16.601318];
-
 </script>
 <template>
-  <div class="h-screen flex flex-col bg-[#000040]" v-bind="FESTIVAL_MAP.elAttrs">
+  <div
+    class="h-screen flex flex-col bg-[#000040]"
+    v-bind="FESTIVAL_MAP.elAttrs"
+  >
     <h3
       class="
         mt-16
@@ -30,15 +42,20 @@ const center = [49.198626, 16.601318];
       class="flex-grow"
       v-model:zoom="zoom"
       v-model:center="center"
-      :min-zoom=7
-      :max-bounds="[[51.2, 12], [48.5, 19]]"
+      :min-zoom="8"
+      :max-bounds="[
+        [51.2, 12],
+        [48.5, 19],
+      ]"
     >
-<!--      <LTileLayer-->
-<!--        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"-->
-<!--        layer-type="base"-->
-<!--        name="OpenStreetMap"-->
-<!--      />-->
-      <LTileLayer url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"></LTileLayer>
+      <!--      <LTileLayer-->
+      <!--        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"-->
+      <!--        layer-type="base"-->
+      <!--        name="OpenStreetMap"-->
+      <!--      />-->
+      <LTileLayer
+        url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png"
+      ></LTileLayer>
       <LMarker :lat-lng="[49.2004081, 16.5985861]">
         <LIcon
           :icon-size="[50, 50]"
@@ -46,7 +63,7 @@ const center = [49.198626, 16.601318];
           :icon-url="stageIconUrl"
         />
         <LTooltip>
-          <strong>Faculty of Arts – Masaryk University</strong><br>
+          <strong>Faculty of Arts – Masaryk University</strong><br />
           Main stage
         </LTooltip>
       </LMarker>
@@ -57,12 +74,23 @@ const center = [49.198626, 16.601318];
           :icon-url="flagParadeIconUrl"
         />
         <LTooltip>
-          <strong>Statue of T. G. Masaryk</strong><br>
+          <strong>Statue of T. G. Masaryk</strong><br />
           Beggining of Flag Parade
         </LTooltip>
       </LMarker>
-
     </LMap>
+    <div class="flex justify-center pt-4">
+      <MoreSignSvg
+        class="
+          hover:translate-y-2
+          transition-transform
+          w-36
+          cursor-pointer
+          mb-4
+        "
+        @click="view.goTo(FESTIVAL_PROGRAMME)"
+      ></MoreSignSvg>
+    </div>
   </div>
 </template>
 <style lang="">
