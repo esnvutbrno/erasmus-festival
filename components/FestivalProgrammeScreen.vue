@@ -1,0 +1,208 @@
+<script setup>
+import { ref } from "vue";
+
+import stageIconUrl from "../assets/img/icons/stage.png";
+import flagParadeIconUrl from "../assets/img/icons/flag-parade.png";
+import { FESTIVAL_PROGRAMME } from "../store/screen";
+
+import MoreSignSvg from "~/assets/svg/more-sign.svg?component";
+import TailsSvg from "../assets/svg/tails.svg?component";
+import FallsSvg from "../assets/svg/falls.svg?component";
+import CfHSvg from "../assets/svg/cfh.svg?component";
+import Dj2Svg from "../assets/svg/dj-1.svg?component";
+import Dj1Svg from "../assets/svg/dj-2.svg?component";
+import Dj3Svg from "../assets/svg/dj-3.svg?component";
+</script>
+<template>
+  <div
+    class="min-h-screen flex flex-col relative FestivalProgrammeScreen"
+    v-bind="FESTIVAL_PROGRAMME.elAttrs"
+  >
+    <div class="FestivalProgrammeScreen__bg"></div>
+    <div class="z-10">
+      <h3
+        class="
+          mt-16
+          text-5xl
+          font-festival
+          drop-shadow-2xl
+          cursor-pointer
+          text-center
+        "
+      >
+        PROGRAMME
+      </h3>
+
+      <div class="xl:px-12 lg:px-8 px-4 pt-8 pb-28 overflow-scroll">
+        <table
+          class="
+            table-fixed
+            w-full
+            min-w-[800px]
+            border-collapse
+            [&_th]:border-[#000040] [&_th]:h-10 [&_th]:border-b-[1px] [&_th]:p-2
+            [&_td]:border-[#000040] [&_td]:h-14 [&_td]:border-b-[1px] [&_td]:p-2
+            border-[#000040] border-b-[1px]
+          "
+        >
+          <thead>
+            <tr class="[&>th]:font-normal bg-[#5151a8] text-white">
+              <th class="w-24"><strong>Time</strong></th>
+              <th>
+                <strong>Masaryk University</strong><br />Komenského náměstí 2
+              </th>
+              <th><strong>Main stage</strong><br />Arne Nováka 1 (MU ARTS)</th>
+              <th><strong>BUmerang stage</strong><br />Arne Nováka 1 (MU ARTS)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">15:00</th>
+              <td rowspan="2" class="font-festival text-2xl bg-[#e3e3ff]">Flag<br>Parade</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">16:00</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">17:05</th>
+              <td></td>
+              <td rowspan="2" class="bg-[#e3e3ff] justify-center relative"><TailsSvg class="w-24 max-w-full absolute m-auto inset-0" /></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">17:30</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">17:50</th>
+              <td></td>
+              <td></td>
+              <td class="bg-[#e3e3ff] border-0 flex justify-center items-center"><Dj1Svg class="w-40 max-w-full" /></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">18:10</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">18:30</th>
+              <td></td>
+              <td rowspan="2" class="bg-[#e3e3ff] justify-center relative"><FallsSvg class="w-32 max-w-full absolute m-auto inset-0" /></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">19:00</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">19:15</th>
+              <td></td>
+              <td></td>
+              <td class="bg-[#e3e3ff] border-0 flex justify-center items-center"><Dj2Svg class="w-40 max-w-full" /></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">19:45</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">20:20</th>
+              <td></td>
+              <td rowspan="2" class="bg-[#e3e3ff] justify-center relative"><CfHSvg class="w-64 max-w-full absolute m-auto inset-0" /></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">21:10</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">21:45</th>
+              <td></td>
+              <td></td>
+              <td class="bg-[#e3e3ff] border-0 flex justify-center items-center"><Dj3Svg class="w-40 max-w-full" /></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">22:00</th>
+              <td colspan="3" class="font-festival text-2xl bg-[#e3e3ff]">END OF FESTIVAL</td>
+            </tr>
+
+
+            <!-- <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">18:30</th>
+              <td></td>
+              <td rowspan="3" class="bg-[#e3e3ff] justify-center relative"><TailsSvg class="w-32 max-w-full absolute m-auto inset-0" /></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">19:15</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">20:20</th>
+              <td></td>
+              <td class="bg-[#e3e3ff] border-0 flex justify-center items-center"><Dj1Svg class="w-40 max-w-full" /></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">21:10</th>
+              <td></td>
+              <td rowspan="3" class="bg-[#e3e3ff] justify-center relative"><FallsSvg class="w-40 max-w-full absolute m-auto inset-0" /></td>
+              <td></td>
+            </tr>
+
+
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">19:00</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">19:30</th>
+              <td></td>
+              <td class="bg-[#e3e3ff] border-0 flex justify-center items-center"><Dj2Svg class="w-40 max-w-full" /></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">20:00</th>
+              <td></td>
+              <td rowspan="3" class="bg-[#e3e3ff] justify-center relative"><CfHSvg class="w-64 max-w-full absolute m-auto inset-0" /></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">20:30</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">21:00</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">21:30</th>
+              <td></td>
+              <td class="bg-[#e3e3ff] border-0 flex justify-center items-center"><Dj3Svg class="w-40 max-w-full" /></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-2xl bg-[#5151a8] text-white">22:00</th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</template>
+<style lang="">
+</style>

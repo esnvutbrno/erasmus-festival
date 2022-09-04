@@ -13,3 +13,16 @@
 .View__bgs {
     @apply absolute top-0 left-0 right-0 h-full z-0;
 }
+
+.FestivalProgrammeScreen__bg {
+    @apply opacity-30;
+    background-image: url("~/assets/img/brick-wall.jpg");
+    background-size: contain;
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -5,6 +5,7 @@ import MoreSignSvg from '~/assets/svg/more-sign.svg?component'
 import ESNBrnoUnitedWhiteSvg from '../assets/svg/esn-bu-logo-white.svg?component'
 import {useView} from "~/composables/useView";
 import {FestivalMapScreen} from "#components";
+import {FestivalProgrammeScreen} from "#components";
 
 const view = useView()
 </script>
@@ -49,7 +50,7 @@ const view = useView()
       />
 
       <MoreSignSvg
-        class="hover:translate-y-2 transition-transform w-36 cursor-pointer"
+        class="hover:translate-y-2 transition-transform w-36 cursor-pointer mb-[4rem]"
         @click="view.goTo(FESTIVAL_MAP)"
       ></MoreSignSvg>
     </div>
