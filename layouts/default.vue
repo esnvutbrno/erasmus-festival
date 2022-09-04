@@ -6,7 +6,7 @@ import {abortNavigation, useRoute, useView, onMounted} from "#imports";
 const view = useView()
 const route = useRoute()
 
-onMounted(() => {
+const follow = () => {
   const name = route.hash.slice(1)
   if (name) {
     const screen: Screen = view.screenByName(name)
@@ -17,7 +17,11 @@ onMounted(() => {
   } else {
     return view.goTo(STAGE)
   }
-})
+}
+
+onMounted(() => follow())
+
+watch(() => route.hash, () => follow())
 
 </script>
 <template>
@@ -27,7 +31,8 @@ onMounted(() => {
       <Meta name="description"
             content="On the 17th of September, all international students from Brno will be in the crowd walking through the city centre of Brno. They will be dancing, singing and holding the flags of their home countries. Then they'll be dancing to the music in the Festival area and enjoying the Festival atmosphere."/>
       <Meta name="author" content="ESN Brno United"/>
-      <Meta name="keywords" content="erasmus, erasmus student network, czech republic, esn vut brno, esn mendelu, esn muni, festival, international, flag parade, brno, masaryk university, brno university of technology, mendel university"/>
+      <Meta name="keywords"
+            content="erasmus, erasmus student network, czech republic, esn vut brno, esn mendelu, esn muni, festival, international, flag parade, brno, masaryk university, brno university of technology, mendel university"/>
       <Meta name="og:type" content="website"/>
       <Meta name="og:image" content="https://festival.esnbrno.cz/og.png"/>
       <Meta name="og:image:width" content="2536"/>
