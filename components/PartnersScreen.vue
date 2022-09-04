@@ -4,11 +4,6 @@ import {STAGE} from "../store/screen";
 import {useView} from "../composables/useView";
 
 const view = useView();
-
-import VUTSvg from '../assets/svg/vut.svg?component'
-import MUNISvg from '../assets/svg/muni.svg?component'
-import MENDELUSvg from '../assets/svg/mendelu.svg?component'
-
 </script>
 
 <template>
@@ -18,27 +13,27 @@ import MENDELUSvg from '../assets/svg/mendelu.svg?component'
       lg:h-1/3 flex flex-row flex-wrap lg:flex-nowrap items-center justify-between px-8 lg:px-16
     ">
       <img
-        src="../assets/svg/dzs.svg"
+        src="../assets/svg/dzs.svg?url"
         width="48" height="48"
         class="Logo w-1/3 lg:w-1/5"
       />
       <img
-        src="../assets/svg/muni.svg"
+        src="../assets/svg/muni.svg?url"
         width="181" height="32"
         class="Logo w-1/3 lg:w-1/5"
       />
       <img
-        src="../assets/svg/vut.svg"
+        src="../assets/svg/vut.svg?url"
         width="311" height="99"
         class="Logo w-1/3 lg:w-1/5"
       />
       <img
-        src="../assets/svg/mendelu.svg"
+        src="../assets/svg/mendelu.svg?url"
         width="107" height="71"
         class="Logo w-1/3 lg:w-1/5"
       />
       <img
-        src="../assets/svg/starobrno.svg"
+        src="../assets/svg/starobrno.svg?url"
         width="487" height="366"
         class="Logo w-1/3 lg:w-1/5"
       />
@@ -67,12 +62,12 @@ import MENDELUSvg from '../assets/svg/mendelu.svg?component'
         class="Logo bg-[#000040] py-8 px-2 w-1/3 lg:w-1/5"
       />
       <img
-        src="../assets/svg/brnoregion.svg"
+        src="../assets/svg/brnoregion.svg?url"
         width="173" height="173"
         class="Logo w-1/3 lg:w-1/5"
       />
       <img
-        src="../assets/svg/best.svg"
+        src="../assets/svg/best.svg?url"
         width="975" height="494"
         class="Logo bg-[#000040] py-8 px-2  w-1/3 lg:w-1/5"
       />
