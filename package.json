@@ -16,5 +16,8 @@
     "leaflet": "^1.8.0",
     "lodash": "^4.17.21",
     "vite-svg-loader": "^3.4.0"
+  },
+  "resolutions": {
+    "autoprefixer": "10.4.5"
   }
 }

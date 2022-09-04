@@ -43,7 +43,7 @@ import Dj3Svg from '../assets/svg/dj-3.svg?component'
     </Wall>
 
     <div class="max-h-[50%] max-w-full flex flex-col justify-start items-center relative">
-      <DjStage alt="" class="h-full -mt-44 lg:-mt-36"/>
+      <DjStage alt="" class="h-full max-w-[70vw] -mt-44 lg:-mt-36"/>
     </div>
 
     <WallNavigation disable-vertical-placement class="bottom-8 inset-x-8">
