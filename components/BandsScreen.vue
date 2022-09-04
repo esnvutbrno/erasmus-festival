@@ -2,6 +2,7 @@
 import {useView} from "../composables/useView";
 import {FOOD, STAGE} from "../store/screen";
 import WallNavigation from './WallNavigation.vue'
+import DjStage from '../assets/svg/dj.svg?component'
 const view = useView();
 
 import HomeRightSvg from '../assets/svg/home-right.svg?component'
@@ -14,9 +15,9 @@ import Dj3Svg from '../assets/svg/dj-3.svg?component'
 </script>
 <template>
   <div class="h-full relative">
-    <Wall>
+    <Wall klass="h-[50%]">
       <template #append>
-        <div class="h-full w-4/5 flex flex-col justify-center relative mb-auto">
+        <div class="h-full w-4/5 flex flex-col justify-center items-start relative mb-auto">
           <div class="flex flex-col lg:flex-row w-full justify-center items-center justify-self-center h-2/3 lg:h-1/2 pt-8">
             <TailsSvg
               alt="The Tails"
@@ -40,6 +41,11 @@ import Dj3Svg from '../assets/svg/dj-3.svg?component'
         </div>
       </template>
     </Wall>
+
+    <div class="max-h-[50%] max-w-full flex flex-col justify-start items-center relative">
+      <DjStage alt="" class="h-full -mt-44 lg:-mt-36"/>
+    </div>
+
     <WallNavigation disable-vertical-placement class="bottom-8 inset-x-8">
       <template #left>
         <ArrowSign
