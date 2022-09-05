@@ -50,7 +50,7 @@ const view = useView()
       />
 
       <MoreSignSvg
-        class="hover:translate-y-2 transition-transform w-36 cursor-pointer mb-[4rem]"
+        class="hover:translate-y-2 transition-transform w-36 cursor-pointer mb-16"
         @click="view.goTo(FESTIVAL_MAP)"
       ></MoreSignSvg>
     </div>

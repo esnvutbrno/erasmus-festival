@@ -10,7 +10,7 @@ import {
 
 import stageIconUrl from "../assets/img/icons/stage.png";
 import flagParadeIconUrl from "../assets/img/icons/flag-parade.png";
-import { FESTIVAL_PROGRAMME, FESTIVAL_MAP } from "../store/screen";
+import { FESTIVAL_MAP } from "../store/screen";
 import { useView } from "~/composables/useView";
 import MoreSignSvg from "~/assets/svg/more-sign.svg?component";
 
@@ -79,18 +79,6 @@ const center = [49.198626, 16.601318];
         </LTooltip>
       </LMarker>
     </LMap>
-    <div class="flex justify-center pt-4">
-      <MoreSignSvg
-        class="
-          hover:translate-y-2
-          transition-transform
-          w-36
-          cursor-pointer
-          mb-4
-        "
-        @click="view.goTo(FESTIVAL_PROGRAMME)"
-      ></MoreSignSvg>
-    </div>
   </div>
 </template>
 <style lang="">

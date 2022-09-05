@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {FLAG_PARADE, FESTIVAL_INFO} from "~/store/screen";
+import {FLAG_PARADE, FESTIVAL_PROGRAMME} from "~/store/screen";
 import {useView} from "~/composables/useView";
 
 import MoreSignSvg from '~/assets/svg/more-sign.svg?component'
@@ -29,7 +29,7 @@ const view = useView()
     <WallNavigation disable-auto-placement class="inset-x-0 bottom-4">
       <template #center>
           <MoreSignSvg
-            @click="view.goTo(FESTIVAL_INFO)"
+            @click="view.goTo(FESTIVAL_PROGRAMME)"
             class="transition-transform hover:translate-y-2 cursor-pointer w-48"
           ></MoreSignSvg>
       </template>
