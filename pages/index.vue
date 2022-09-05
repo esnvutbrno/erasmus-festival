@@ -5,11 +5,11 @@
 
     <FlagParadeScreen class="snap-start" />
 
+    <FestivalProgrammeScreen class="snap-start" />
+
     <FestivalInfoScreen class="snap-start" />
 
     <FestivalMapScreen class="snap-start" />
-
-    <FestivalProgrammeScreen class="snap-start" />
   </NuxtLayout>
 </template>
 

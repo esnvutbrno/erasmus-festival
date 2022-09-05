@@ -3,7 +3,10 @@ import { ref } from "vue";
 
 import stageIconUrl from "../assets/img/icons/stage.png";
 import flagParadeIconUrl from "../assets/img/icons/flag-parade.png";
-import { FESTIVAL_PROGRAMME } from "../store/screen";
+import { FESTIVAL_PROGRAMME, FESTIVAL_INFO } from "../store/screen";
+import { useView } from "~/composables/useView";
+
+const view = useView();
 
 import MoreSignSvg from "~/assets/svg/more-sign.svg?component";
 import TailsSvg from "../assets/svg/tails.svg?component";
@@ -33,13 +36,14 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
         PROGRAMME
       </h3>
 
-      <div class="xl:px-12 lg:px-8 px-4 pt-8 pb-28 overflow-scroll">
+      <div class="xl:px-12 lg:px-8 px-4 pt-8 pb-8 overflow-scroll">
         <table
           class="
             table-fixed
             w-full
             min-w-[800px]
             border-collapse
+            select-none
             [&_th]:border-[#000040]
             [&_th]:h-10
             [&_th]:border-b-[1px]
@@ -216,6 +220,19 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="flex justify-center">
+        <MoreSignSvg
+          class="
+            hover:translate-y-2
+            transition-transform
+            w-36
+            cursor-pointer
+            mb-24
+          "
+          @click="view.goTo(FESTIVAL_INFO)"
+        ></MoreSignSvg>
       </div>
     </div>
   </div>
