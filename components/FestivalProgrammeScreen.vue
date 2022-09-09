@@ -21,7 +21,7 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
     class="min-h-screen flex flex-col relative FestivalProgrammeScreen"
     v-bind="FESTIVAL_PROGRAMME.elAttrs"
   >
-    <div class="FestivalProgrammeScreen__bg"></div>
+    <div class="Festival__bg-brick"></div>
     <div class="z-10">
       <h3
         class="
@@ -31,6 +31,7 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
           drop-shadow-2xl
           cursor-pointer
           text-center
+          text-[#000040]
         "
       >
         PROGRAMME
@@ -59,7 +60,7 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
         >
           <thead>
             <tr class="[&>th]:font-normal bg-[#000040] text-white">
-              <th class="w-24"><strong>Time</strong></th>
+              <th class="w-16"><strong>Time</strong></th>
               <th>
                 <strong>Masaryk University</strong><br />Komenského náměstí 2
               </th>
@@ -67,15 +68,15 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
           </thead>
           <tbody>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 15:00
               </th>
-              <td rowspan="2" class="font-festival text-2xl bg-[#e3e3ff]">
+              <td rowspan="2" class="font-festival text-1xl bg-[#e3e3ff]">
                 Flag<br />Parade
               </td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 16:00
               </th>
             </tr>
@@ -103,14 +104,14 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
         >
           <thead>
             <tr class="[&>th]:font-normal bg-[#000040] text-white">
-              <th class="w-24"><strong>Time</strong></th>
+              <th class="w-16"><strong>Time</strong></th>
               <th><strong>Main stage</strong></th>
               <th><strong>BUmerang stage</strong><br />(DJs and Games)</th>
             </tr>
           </thead>
           <tbody>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 17:05
               </th>
               <td rowspan="2" class="bg-[#e3e3ff] justify-center relative">
@@ -119,13 +120,13 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
               <td></td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 17:30
               </th>
               <td></td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 17:50
               </th>
               <td></td>
@@ -136,14 +137,14 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
               </td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 18:10
               </th>
               <td></td>
               <td></td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 18:30
               </th>
               <td rowspan="2" class="bg-[#e3e3ff] justify-center relative">
@@ -154,13 +155,13 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
               </td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 19:00
               </th>
               <td></td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 19:15
               </th>
               <td></td>
@@ -171,14 +172,14 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
               </td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 19:45
               </th>
               <td></td>
               <td></td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 20:05
               </th>
               <td class="bg-[#e3e3ff]">
@@ -188,7 +189,7 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
             </tr>
 
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 20:20
               </th>
               <td rowspan="2" class="bg-[#e3e3ff] justify-center relative">
@@ -201,13 +202,13 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
               </td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 21:10
               </th>
               <td></td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 21:45
               </th>
               <td
@@ -218,10 +219,10 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
               <td></td>
             </tr>
             <tr class="text-center">
-              <th class="font-festival text-2xl bg-[#000040] text-white">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
                 22:00
               </th>
-              <td colspan="2" class="font-festival text-2xl bg-[#e3e3ff]">
+              <td colspan="2" class="font-festival text-1xl bg-[#e3e3ff]">
                 AFTERPARTY
               </td>
             </tr>

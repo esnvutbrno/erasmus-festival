@@ -21,18 +21,20 @@ const center = [49.198626, 16.601318];
 </script>
 <template>
   <div
-    class="h-screen flex flex-col bg-[#000040]"
+    class="h-screen flex flex-col relative "
     v-bind="FESTIVAL_MAP.elAttrs"
   >
+    <div class="Festival__bg-brick"></div>
     <h3
       class="
         mt-16
-        text-white text-5xl
+        text-5xl
         font-festival
         drop-shadow-2xl
         cursor-pointer
         text-center
         mb-8
+        text-[#000040]
       "
     >
       MAP OF THE FESTIVAL
@@ -42,7 +44,7 @@ const center = [49.198626, 16.601318];
       class="flex-grow"
       v-model:zoom="zoom"
       v-model:center="center"
-      :min-zoom="8"
+      :min-zoom="12"
       :max-bounds="[
         [51.2, 12],
         [48.5, 19],
