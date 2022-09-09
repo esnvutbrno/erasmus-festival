@@ -13,7 +13,7 @@ const view = useView()
 <template>
   <section
     v-bind="FESTIVAL_INFO.elAttrs"
-    class="bg-[#000040] mx-auto max-w-6xl py-4 xl:py-8 text-white"
+    class="bg-[#000040] mx-auto py-4 xl:py-8 text-white"
   >
     <div
       class="min-h-screen flex flex-col justify-center items-center"
@@ -50,7 +50,7 @@ const view = useView()
       />
 
       <MoreSignSvg
-        class="hover:translate-y-2 transition-transform w-36 cursor-pointer mb-16"
+        class="hover:translate-y-2 transition-transform w-36 cursor-pointer"
         @click="view.goTo(FESTIVAL_MAP)"
       ></MoreSignSvg>
     </div>
