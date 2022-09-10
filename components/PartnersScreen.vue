@@ -1,6 +1,6 @@
 <script setup>
 
-import {STAGE} from "../store/screen";
+import {CHILL} from "../store/screen";
 import {useView} from "../composables/useView";
 
 const view = useView();
@@ -11,6 +11,7 @@ const view = useView();
     <div class="
       order-2 lg:order-1
       lg:h-1/3 flex flex-row flex-wrap lg:flex-nowrap items-center justify-between px-8 lg:px-16
+      bg-white
     ">
       <img
         src="../assets/svg/dzs.svg?url"
@@ -19,7 +20,7 @@ const view = useView();
       />
       <img
         src="../assets/svg/muni.svg?url"
-        width="181" height="32"
+        width="16" height="16"
         class="Logo w-1/3 lg:w-1/5"
       />
       <img
@@ -41,15 +42,16 @@ const view = useView();
     <div
       class="
         lg:h-1/3 py-8 px-4 order-1 lg:order-2
-        bg-[#000040] flex flex-row items-center text-4xl uppercase text-white
+        flex flex-row items-center text-4xl uppercase text-white
         font-festival text-4xl sm:text-5xl md:text-6xl lg:text-8xl
       ">
-      <button class="mr-auto rotate-90 ml-8" @click="view.goTo(STAGE)">v</button>
+      <button class="mr-auto rotate-90 ml-8 transition-transform hover:-translate-x-2 cursor-pointer" @click="view.goTo(CHILL)">v</button>
       <h2 class="mr-auto">Partners</h2>
     </div>
     <div class="
       order-3
       lg:h-1/3 flex flex-row flex-wrap lg:flex-nowrap items-center justify-between px-8 lg:px-16
+      bg-white
     ">
       <img
         src="../assets/img/aisec.png"
