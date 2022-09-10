@@ -1,1 +1,0 @@
-import{a7 as s,a8 as e,a9 as o,aa as r}from"./entry-968f72e8.mjs";class t{constructor(a){this.router=a}async goTo(a){await e({hash:"#"+a.name}),a.goTo()}screenByName(a){return o.find(r,{name:a})}}const i=()=>new t(s());export{i as u};
