@@ -8,5 +8,5 @@ export default defineNuxtPlugin((nuxtApp) => {
             id: 'UA-180183263-3'
         }
     })
-    trackRouter(useRouter(), {useScreenview: true, skipSamePath: false})
+    // trackRouter(useRouter(), {useScreenview: true, skipSamePath: false})
 })
