@@ -18,9 +18,9 @@ class View {
         screen.goTo()
 
         // @ts-ignore
-        const gtag: Gtag = useNuxtApp().vueApp.$gtag;
+        // const gtag: Gtag = useNuxtApp().vueApp.$gtag;
         // @ts-ignore
-        gtag.pageview({page_location: '#' + screen.name})
+        // gtag.pageview({page_location: '#' + screen.name})
     }
 
     screenByName(name: string) {
