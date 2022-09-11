@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {FESTIVAL_INFO, FESTIVAL_MAP} from "~/store/screen";
+import {FESTIVAL_INFO, FESTIVAL_TEAM} from "~/store/screen";
 
 import MoreSignSvg from '~/assets/svg/more-sign.svg?component'
 import ESNBrnoUnitedWhiteSvg from '../assets/svg/esn-bu-logo-white.svg?component'
@@ -48,11 +48,10 @@ const view = useView()
       <ESNBrnoUnitedWhiteSvg
         class="w-64 mx-auto my-8 px-8"
       />
-
-<!--      <MoreSignSvg-->
-<!--        class="hover:translate-y-2 transition-transform w-36 cursor-pointer"-->
-<!--        @click="view.goTo(FESTIVAL_MAP)"-->
-<!--      ></MoreSignSvg>-->
+      <MoreSignSvg
+        class="hover:translate-y-2 transition-transform w-36 cursor-pointer"
+        @click="view.goTo(FESTIVAL_TEAM)"
+      ></MoreSignSvg>
     </div>
   </section>
 </template>

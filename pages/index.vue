@@ -8,8 +8,9 @@
       <FestivalProgrammeScreen/>
 
       <FestivalInfoScreen/>
+      <TeamScreen />
 
-<!--      <FestivalMapScreen/>-->
+      <FestivalMapScreen />
     </div>
   </NuxtLayout>
 </template>
