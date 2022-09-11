@@ -1,11 +1,13 @@
 import {Router} from "vue-router";
-import {navigateTo, useRouter} from "#imports";
+import {navigateTo, useNuxtApp, useRouter} from "#imports";
 import {ALL_SCREENS, Screen} from '~/store/screen'
 import _ from "lodash";
+import {App} from "vue";
 
 class View {
     public constructor(
-        protected router: Router
+        protected router: Router,
+        protected vueApp: App<Element>
     ) {
 
     }
@@ -13,6 +15,12 @@ class View {
     async goTo(screen: Screen) {
         await navigateTo({hash: '#' + screen.name})
         screen.goTo()
+
+        // @ts-ignore
+        // const gtag: Gtag = useNuxtApp().vueApp.$gtag;
+        // @ts-ignore
+        // gtag.pageview({page_location: '#' + screen.name})
+        // trackPage({hash: '#' + screen.name})
     }
 
     screenByName(name: string) {
@@ -21,5 +29,5 @@ class View {
 }
 
 export const useView = () => {
-    return new View(useRouter())
+    return new View(useRouter(), useNuxtApp().vueApp)
 }

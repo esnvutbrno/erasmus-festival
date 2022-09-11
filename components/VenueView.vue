@@ -31,15 +31,15 @@ const view = useView()
         <StageScreen/>
       </section>
 
-      <section class="View__screen bg-violet-800" v-bind="CHILL.elAttrs">
+      <section class="View__screen bg-[#000040]" v-bind="CHILL.elAttrs">
         <ChillScreen/>
       </section>
 
-      <section class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">
-        <ClubsScreen />
-      </section>
+<!--      <section class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">-->
+<!--        <ClubsScreen />-->
+<!--      </section>-->
 
-      <section class="View__screen" v-bind="PARTNERS.elAttrs">
+      <section class="View__screen bg-[#000040]" v-bind="PARTNERS.elAttrs">
         <PartnersScreen/>
       </section>
     </div>

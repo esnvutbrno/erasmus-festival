@@ -1,17 +1,17 @@
-
 <template>
   <NuxtLayout>
-    <VenueView />
+    <VenueView class="snap-start"/>
 
-    <FlagParadeScreen />
+    <FlagParadeScreen class="snap-start"/>
 
-    <FestivalProgrammeScreen />
+    <div class="snap-start">
+      <FestivalProgrammeScreen/>
 
-    <FestivalInfoScreen />
+      <FestivalInfoScreen/>
+      <TeamScreen />
 
-    <TeamScreen />
-
-    <FestivalMapScreen />
+      <FestivalMapScreen />
+    </div>
   </NuxtLayout>
 </template>
 

@@ -7,6 +7,9 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
     ],
+    // plugins: [
+    //     '~/plugins/vue-gtag.client.js',
+    // ],
     tailwindcss: {
         cssPath: '~/assets/css/main.css',
     },

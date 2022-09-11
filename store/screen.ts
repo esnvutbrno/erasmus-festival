@@ -1,5 +1,8 @@
 import _ from 'lodash'
 
+import {scrollIntoView} from "seamless-scroll-polyfill";
+
+
 export class Screen {
     public ref: HTMLElement = null
 
@@ -22,7 +25,7 @@ export class Screen {
     }
 
     goTo() {
-        this.ref.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
+        scrollIntoView(this.ref, {behavior: "smooth", block: "start", inline: "start"})
     }
 }
 
@@ -41,7 +44,7 @@ export const FESTIVAL_MAP = new Screen('festival-map', 100)
 export const FESTIVAL_PROGRAMME = new Screen('festival-programme', 100)
 export const FESTIVAL_TEAM = new Screen('festival-team', 100)
 
-export const ALL_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS, PARTNERS, FLAG_PARADE, FESTIVAL_INFO, FESTIVAL_MAP, FESTIVAL_PROGRAMME, FESTIVAL_TEAM}
-export const TOP_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, CLUBS}
+export const ALL_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, CHILL, //CLUBS, PARTNERS, FLAG_PARADE, FESTIVAL_INFO, FESTIVAL_MAP, FESTIVAL_PROGRAMME, FESTIVAL_TEAM}
+export const TOP_SCREENS: Record<string, Screen> = {FOOD, BANDS, STAGE, //CHILL, //CLUBS}
 
 export const TOTAL_WIDTH = _.sumBy(Object.values(TOP_SCREENS), 'width');

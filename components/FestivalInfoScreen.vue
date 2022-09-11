@@ -48,7 +48,6 @@ const view = useView()
       <ESNBrnoUnitedWhiteSvg
         class="w-64 mx-auto my-8 px-8"
       />
-
       <MoreSignSvg
         class="hover:translate-y-2 transition-transform w-36 cursor-pointer"
         @click="view.goTo(FESTIVAL_TEAM)"
