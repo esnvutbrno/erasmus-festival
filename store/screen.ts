@@ -1,5 +1,8 @@
 import _ from 'lodash'
 
+import {scrollIntoView} from "seamless-scroll-polyfill";
+
+
 export class Screen {
     public ref: HTMLElement = null
 
@@ -22,7 +25,7 @@ export class Screen {
     }
 
     goTo() {
-        this.ref.scrollIntoView({behavior: "smooth", block: "start", inline: "start"})
+        scrollIntoView(this.ref, {behavior: "smooth", block: "start", inline: "start"})
     }
 }
 
