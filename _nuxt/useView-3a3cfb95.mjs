@@ -1,1 +1,0 @@
-import{R as s,U as t,V as o,W as u,X as p}from"./entry-76d88073.mjs";class g{constructor(a,e){this.router=a,this.vueApp=e}async goTo(a){await o({hash:"#"+a.name}),a.goTo(),t().vueApp.$gtag.pageview({page_location:"#"+a.name})}screenByName(a){return u.find(p,{name:a})}}const i=()=>new g(s(),t().vueApp);export{i as u};
