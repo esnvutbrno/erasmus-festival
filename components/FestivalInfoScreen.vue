@@ -49,10 +49,10 @@ const view = useView()
         class="w-64 mx-auto my-8 px-8"
       />
 
-      <MoreSignSvg
-        class="hover:translate-y-2 transition-transform w-36 cursor-pointer"
-        @click="view.goTo(FESTIVAL_MAP)"
-      ></MoreSignSvg>
+<!--      <MoreSignSvg-->
+<!--        class="hover:translate-y-2 transition-transform w-36 cursor-pointer"-->
+<!--        @click="view.goTo(FESTIVAL_MAP)"-->
+<!--      ></MoreSignSvg>-->
     </div>
   </section>
 </template>

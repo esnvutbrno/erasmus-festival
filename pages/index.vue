@@ -9,7 +9,7 @@
 
       <FestivalInfoScreen/>
 
-      <FestivalMapScreen/>
+<!--      <FestivalMapScreen/>-->
     </div>
   </NuxtLayout>
 </template>
