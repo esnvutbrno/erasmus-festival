@@ -140,7 +140,7 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
               <th class="font-festival text-1xl bg-[#000040] text-white">
                 18:10
               </th>
-              <td></td>
+              <td class="bg-[#e3e3ff]"><span class="font-festival">West Coast Swing</span></td>
               <td></td>
             </tr>
             <tr class="text-center">
@@ -176,6 +176,15 @@ import Dj3Svg from "../assets/svg/dj-3.svg?component";
                 19:45
               </th>
               <td></td>
+              <td></td>
+            </tr>
+            <tr class="text-center">
+              <th class="font-festival text-1xl bg-[#000040] text-white">
+                19:55
+              </th>
+              <td class="bg-[#e3e3ff]">
+                <span class="font-festival">Parkour</span>
+              </td>
               <td></td>
             </tr>
             <tr class="text-center">

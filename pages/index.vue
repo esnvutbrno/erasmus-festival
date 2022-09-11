@@ -9,6 +9,8 @@
 
     <FestivalInfoScreen />
 
+    <TeamScreen />
+
     <FestivalMapScreen />
   </NuxtLayout>
 </template>

@@ -21,10 +21,10 @@ const center = [49.198626, 16.601318];
 </script>
 <template>
   <div
-    class="h-screen flex flex-col relative "
+    class="h-screen flex flex-col relative bg-[#000040]"
     v-bind="FESTIVAL_MAP.elAttrs"
+    
   >
-    <div class="Festival__bg-brick"></div>
     <h3
       class="
         mt-16
@@ -34,7 +34,7 @@ const center = [49.198626, 16.601318];
         cursor-pointer
         text-center
         mb-8
-        text-[#000040]
+        text-white
       "
     >
       MAP OF THE FESTIVAL
