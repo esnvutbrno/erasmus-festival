@@ -3,6 +3,7 @@ import {navigateTo, useNuxtApp, useRouter} from "#imports";
 import {ALL_SCREENS, Screen} from '~/store/screen'
 import _ from "lodash";
 import {App} from "vue";
+import Gtag from "vue-gtag-next";
 
 class View {
     public constructor(
@@ -15,6 +16,11 @@ class View {
     async goTo(screen: Screen) {
         await navigateTo({hash: '#' + screen.name})
         screen.goTo()
+
+        // @ts-ignore
+        const gtag: Gtag = useNuxtApp().vueApp.$gtag;
+        // @ts-ignore
+        gtag.pageview({page_location: '#' + screen.name})
     }
 
     screenByName(name: string) {
