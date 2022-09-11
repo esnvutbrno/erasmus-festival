@@ -3,7 +3,6 @@ import {navigateTo, useNuxtApp, useRouter} from "#imports";
 import {ALL_SCREENS, Screen} from '~/store/screen'
 import _ from "lodash";
 import {App} from "vue";
-import {trackPage} from 'vue-gtag-next/dist/vue-gtag-next.esm'
 
 class View {
     public constructor(
@@ -21,7 +20,7 @@ class View {
         // const gtag: Gtag = useNuxtApp().vueApp.$gtag;
         // @ts-ignore
         // gtag.pageview({page_location: '#' + screen.name})
-        trackPage({hash: '#' + screen.name})
+        // trackPage({hash: '#' + screen.name})
     }
 
     screenByName(name: string) {
