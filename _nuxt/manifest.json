@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-fcc88697.mjs",
+    "file": "entry-e75e474d.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -9,7 +9,7 @@
       "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs"
     ],
     "css": [
-      "entry.75d69202.css"
+      "entry.1e8a7a84.css"
     ],
     "assets": [
       "board-game.4c9e9d3b.png",
@@ -25,6 +25,13 @@
       "ki.dd23743c.png",
       "stage.70ad1e83.png",
       "flag-parade.c1a408df.png",
+      "marijana.3325ad42.jpg",
+      "radmila.f0a28c41.jpg",
+      "adela.85b9b113.jpg",
+      "joe.d31ae176.jpg",
+      "radka.1fbb4e7a.jpg",
+      "lukas.b7b829b8.jpg",
+      "matej.89b3aa21.jpg",
       "brick-wall.5654757d.jpg",
       "grass.7f5811d0.png",
       "grass-line.d868a311.png",
@@ -34,7 +41,7 @@
     ]
   },
   "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs": {
-    "file": "error-component-70ebdf82.mjs",
+    "file": "error-component-eed53d31.mjs",
     "src": "virtual:nuxt:/home/runner/work/erasmus-festival/erasmus-festival/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -46,31 +53,38 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-6c479e3f.mjs",
+    "file": "index-bc39b843.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_useView-17a8dcc4.mjs"
+      "_useView-1041989b.mjs"
+    ],
+    "dynamicImports": [
+      "node_modules/leaflet/dist/images/marker-icon-2x.png",
+      "node_modules/leaflet/dist/images/marker-icon.png",
+      "node_modules/leaflet/dist/images/marker-shadow.png",
+      "node_modules/leaflet/dist/leaflet-src.esm.js",
+      "_leaflet-src-99fc1ba0.mjs"
     ]
   },
-  "_useView-17a8dcc4.mjs": {
-    "file": "useView-17a8dcc4.mjs",
+  "_useView-1041989b.mjs": {
+    "file": "useView-1041989b.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "layouts/default.vue": {
-    "file": "default-08020f40.mjs",
+    "file": "default-9a0910ae.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_useView-17a8dcc4.mjs"
+      "_useView-1041989b.mjs"
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
-    "file": "error-404-3efceed5.mjs",
+    "file": "error-404-76190db1.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -81,7 +95,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
-    "file": "error-500-758018dc.mjs",
+    "file": "error-500-85533fd1.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -89,6 +103,33 @@
     ],
     "css": [
       "error-500.45c67e9b.css"
+    ]
+  },
+  "node_modules/leaflet/dist/images/marker-icon-2x.png": {
+    "file": "marker-icon-2x-b0a9af56.mjs",
+    "src": "node_modules/leaflet/dist/images/marker-icon-2x.png",
+    "isDynamicEntry": true
+  },
+  "node_modules/leaflet/dist/images/marker-icon.png": {
+    "file": "marker-icon-54a52798.mjs",
+    "src": "node_modules/leaflet/dist/images/marker-icon.png",
+    "isDynamicEntry": true
+  },
+  "node_modules/leaflet/dist/images/marker-shadow.png": {
+    "file": "marker-shadow-81e14e77.mjs",
+    "src": "node_modules/leaflet/dist/images/marker-shadow.png",
+    "isDynamicEntry": true
+  },
+  "node_modules/leaflet/dist/leaflet-src.esm.js": {
+    "file": "leaflet-src.esm-dcb04db7.mjs",
+    "src": "node_modules/leaflet/dist/leaflet-src.esm.js",
+    "isDynamicEntry": true
+  },
+  "_leaflet-src-99fc1ba0.mjs": {
+    "file": "leaflet-src-99fc1ba0.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
     ]
   }
 }
