@@ -19,23 +19,6 @@ const view = useView()
       <template #append>
         <WallNavigation>
           <template #left>
-            <ArrowSign
-              alt="Go to bands section"
-              title="Music fan?"
-              dir="left"
-              text="BANDS"
-              class="w-32 lg:w-40 lg:translate-y-40 origin-bottom transition-transform hover:-rotate-2 cursor-pointer"
-              @click="view.goTo(BANDS)"
-            ></ArrowSign>
-
-            <ArrowSign
-              alt="Go to food section"
-              title="Curious or hungry?"
-              dir="left"
-              text="FOOD"
-              class="w-32 lg:w-40 lg:translate-y-6 -translate-y-24"
-              @click="view.goTo(FOOD)"
-            ></ArrowSign>
           </template>
           <template #right>
             <PartnersSignSvg
