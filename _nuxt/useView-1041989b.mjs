@@ -1,1 +1,0 @@
-import{ae as s,af as t,ag as o,ah as r,ai as u}from"./entry-e75e474d.mjs";class i{constructor(a,e){this.router=a,this.vueApp=e}async goTo(a){await o({hash:"#"+a.name}),a.goTo()}screenByName(a){return r.find(u,{name:a})}}const c=()=>new i(s(),t().vueApp);export{c as u};
