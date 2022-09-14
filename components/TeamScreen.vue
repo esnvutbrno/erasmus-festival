@@ -2,7 +2,6 @@
 import { FESTIVAL_TEAM, FESTIVAL_MAP } from "~/store/screen";
 
 import MoreSignSvg from "~/assets/svg/more-sign.svg?component";
-import ESNBrnoUnitedWhiteSvg from "../assets/svg/esn-bu-logo-white.svg?component";
 import { useView } from "~/composables/useView";
 
 const view = useView();
@@ -46,19 +45,19 @@ const view = useView();
         </div>
         <div class="team__person w-1/2 md:w-1/4 p-4 mb-4 flex flex-col items-center">
           <img
-            src="/assets/img/team/joe.jpg"
-            class="mb-4 shrink-0 w-32 h-32 rounded-full"
-          />
-          <h3 class="font-bold text-xl">Joe Kolář</h3>
-          <p class="opacity-75">Tech, bands, website</p>
-        </div>
-        <div class="team__person w-1/2 md:w-1/4 p-4 mb-4 flex flex-col items-center">
-          <img
             src="/assets/img/team/radka.jpg"
             class="mb-4 shrink-0 w-32 h-32 rounded-full"
           />
           <h3 class="font-bold text-xl">Radka Konečná</h3>
           <p class="opacity-75">Backstage service, programme</p>
+        </div>
+        <div class="team__person w-1/2 md:w-1/4 p-4 mb-4 flex flex-col items-center">
+          <img
+            src="/assets/img/team/joe.jpg"
+            class="mb-4 shrink-0 w-32 h-32 rounded-full"
+          />
+          <h3 class="font-bold text-xl">Joe Kolář</h3>
+          <p class="opacity-75">Tech, bands, website</p>
         </div>
         <div class="team__person w-1/2 md:w-1/4 p-4 mb-4 flex flex-col items-center">
           <img
@@ -75,6 +74,14 @@ const view = useView();
           />
           <h3 class="font-bold text-xl">Matej Špernoga</h3>
           <p class="opacity-75">PR, bars, logistics</p>
+        </div>
+        <div class="team__person w-1/2 md:w-1/4 p-4 mb-4 flex flex-col items-center">
+          <img
+            src="/assets/img/team/filip.jpg"
+            class="mb-4 shrink-0 w-32 h-32 rounded-full"
+          />
+          <h3 class="font-bold text-xl">Filip Wagner</h3>
+          <p class="opacity-75">Finance</p>
         </div>
       </div>
 
