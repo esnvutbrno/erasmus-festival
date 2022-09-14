@@ -19,14 +19,6 @@ const view = useView()
         <div class="Bg__grass z-0"></div>
       </div>
 
-      <section class="View__screen bg-red-700" v-bind="FOOD.elAttrs">
-        <FoodScreen/>
-      </section>
-
-      <section class="View__screen bg-gray-200" v-bind="BANDS.elAttrs">
-        <BandsScreen />
-      </section>
-
       <section class="View__screen" v-bind="STAGE.elAttrs">
         <StageScreen/>
       </section>
@@ -34,10 +26,6 @@ const view = useView()
       <section class="View__screen bg-[#000040]" v-bind="CHILL.elAttrs">
         <ChillScreen/>
       </section>
-
-<!--      <section class="View__screen bg-orange-600" v-bind="CLUBS.elAttrs">-->
-<!--        <ClubsScreen />-->
-<!--      </section>-->
 
       <section class="View__screen bg-[#000040]" v-bind="PARTNERS.elAttrs">
         <PartnersScreen/>

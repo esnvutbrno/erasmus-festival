@@ -57,8 +57,8 @@ export const ALL_SCREENS: Record<string, Screen> = {
     FESTIVAL_TEAM
 }
 export const TOP_SCREENS: Record<string, Screen> = {
-    FOOD,
-    BANDS,
+    // FOOD,
+    // BANDS,
     STAGE,
     //CHILL,
     //CLUBS
